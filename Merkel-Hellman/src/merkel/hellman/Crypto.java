@@ -41,11 +41,11 @@ public class Crypto {
             result[j] = encryptBlock(piece);
         }
         
-        // return the encrypted bytes
+        // return the encrypted bytes as int[]
         return result;
     }
     
-    private int encryptBlock(byte[] block){
+    public int encryptBlock(byte[] block){
         U.p("= encrypt block");
         U.p(U.toCharArr(block));
         
@@ -86,7 +86,7 @@ public class Crypto {
         return decrypted;
     }
     
-    private byte[] decryptBlock(int block, int inverse){
+    public byte[] decryptBlock(int block, int inverse){
         U.p("= decrypt block");
         U.p(block);
         
