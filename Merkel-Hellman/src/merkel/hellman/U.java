@@ -48,4 +48,18 @@ public class U {
         
         return chars;
     }
+   
+    
+    public static byte toByte(String str) {
+        byte b;
+        
+        int difference = 8 - str.length();
+        
+        for (int i = 0; i < difference; ++i){
+            str = "0" + str;
+        }
+        
+        return (byte) Integer.parseInt(str, 2);
+    }
+  
 }

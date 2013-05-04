@@ -20,6 +20,7 @@ public class MerkelHellman {
         // Decrypt
         byte[] decryptedData = crypto.decrypt(encryptedData);
         
-        U.p(decryptedData);
+        String decryptedStr = new String(decryptedData);
+        U.p(decryptedStr);
     }
 }

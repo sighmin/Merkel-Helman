@@ -1,6 +1,7 @@
 
 package merkel.hellman;
 
+import java.math.BigInteger;
 /**
  *
  * @author simon
@@ -12,10 +13,10 @@ public class Crypto {
         // r: multiplier which is in [1,q)
         // w: superincreasing sequence
     
-    int[] w = {2, 7, 11, 21, 42, 89, 180, 354};
-    int[] B = new int[w.length];
-    int q = 881;
-    int r = 588;
+    private int[] w = {2, 7, 11, 21, 42, 89, 180, 354};
+    private int[] B = new int[w.length];
+    private int q = 881;
+    private int r = 588;
     
     public Crypto(){
     }
@@ -52,9 +53,26 @@ public class Crypto {
         byte[] decrypted = new byte[1];
         
         // multiply encrypted number by modular inverse and mod by q
-        int inverse;
+        BigInteger inverse = new BigInteger(String.valueOf(r)); 
+        inverse = inverse.modInverse(new BigInteger(String.valueOf(q)));
+        System.out.println(inverse);
+ 
+        String res = "";
         
+        int decryptedNum = encrypted[0] * inverse.intValue() % q;
         
+        int temp = decryptedNum;
+        for (int i = w.length - 1; i >= 0; --i) {  
+            if(temp - w[i] >= 0) {
+                temp = temp - w[i];
+                res = "1" + res; 
+            } 
+            else {
+                res = "0" + res;
+            }
+        }
+        //System.out.println("Res: " + res);
+        decrypted[0] = U.toByte(res);
         // decrypt result with w and return
         return decrypted;
     }
