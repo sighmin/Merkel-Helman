@@ -1,32 +1,56 @@
 
 package merkel.hellman;
 
+import java.math.BigInteger;
+
 /**
  *
  * @author simon
  */
 public class U {
+    static boolean silent = false;
+    
     static public void p(String s){
-        System.out.println(s);
+        if (!silent) System.out.println(s);
     }
     
     static public void p(int s){
-        System.out.println(s);
+        if (!silent) System.out.println(s);
     }
     
     static public void p(char[] s){
-        System.out.println(s);
+        if (!silent) System.out.println(s);
     }
     
     static public void p(int[] s){
-        for (int i : s)
-            System.out.print(i + ",");
-        System.out.println("");
+        if (!silent){
+            for (int i : s)
+                System.out.print(i + ",");
+            System.out.println("");
+        }
+    }
+    
+    static public void p(long[] s){
+        if (!silent){
+            for (long i : s)
+                System.out.print(i + ",");
+            System.out.println("");
+        }
+    }
+    
+    static public void p(BigInteger[] s){
+        if (!silent){
+            for (BigInteger i : s)
+                System.out.println(i.toString());
+            System.out.println("");
+        }
     }
     
     static public void p(byte[] data){
-        for (byte b : data){
-            System.out.print(Integer.toBinaryString(b));
+        if (!silent){
+            for (byte b : data){
+                System.out.print(Integer.toBinaryString(b));
+            }
         }
     }
     
@@ -34,14 +58,16 @@ public class U {
         char[] chars;
         
         String temp = "";
+        String bytelength = "";
         for (byte b : data){
-            temp += Integer.toBinaryString(b);
-        }
+            bytelength = Integer.toBinaryString(b);
+            int difference = 8 - bytelength.length();
         
-        int difference = 8 - temp.length();
-        
-        for (int i = 0; i < difference; ++i){
-            temp = "0" + temp;
+            for (int i = 0; i < difference; ++i){
+                bytelength = "0" + bytelength;
+            }
+            
+            temp = temp + bytelength;
         }
         
         chars = temp.toCharArray();
@@ -51,15 +77,48 @@ public class U {
    
     
     public static byte toByte(String str) {
-        byte b;
+        String temp = new String(str);
+        //U.p("Before: "+str);
         
-        int difference = 8 - str.length();
+        int difference = 8 - temp.length();
         
         for (int i = 0; i < difference; ++i){
-            str = "0" + str;
+            temp = "0" + temp;
         }
-        
-        return (byte) Integer.parseInt(str, 2);
+        byte b = (byte) Integer.parseInt(temp, 2);
+        //U.p("After: "+b);
+        return b;
     }
   
+    public static int[] createSuperincreasing() {
+        int length = 16;
+        int[] seq = new int[length];
+        
+        for (int i = 0; i < length; ++i){
+            int temp = 1;
+            for (int j = 0; j < i; ++j){
+                temp += seq[j];
+                //temp = temp.add(seq[j]);
+            }
+            seq[i] = temp;
+        }
+        
+        return seq;
+    }
+        
+//    public static BigInteger[] createSuperincreasing() {
+//        int length = 128;
+//        BigInteger[] seq = new BigInteger[length];
+//        
+//        for (int i = 0; i < length; ++i){
+//            BigInteger temp = new BigInteger("1");
+//            for (int j = 0; j < i; ++j){
+//                //temp += seq[j];
+//                temp = temp.add(seq[j]);
+//            }
+//            seq[i] = temp;
+//        }
+//        
+//        return seq;
+//    }
 }
