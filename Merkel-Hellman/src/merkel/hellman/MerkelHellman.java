@@ -14,6 +14,7 @@ public class MerkelHellman {
         // init
         Crypto crypto = new Crypto();
         
+        //U.p(U.createSuperincreasing());
         boolean pass = crypto.test();
         
         U.p("======================");
