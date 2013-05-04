@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package merkel.hellman;
 
 /**
@@ -14,6 +11,15 @@ public class MerkelHellman {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // init
+        Crypto crypto = new Crypto();
+        
+        // Encrypt
+        int[] encryptedData = crypto.encrypt("a".getBytes());
+        
+        // Decrypt
+        byte[] decryptedData = crypto.decrypt(encryptedData);
+        
+        U.p(decryptedData);
     }
 }
