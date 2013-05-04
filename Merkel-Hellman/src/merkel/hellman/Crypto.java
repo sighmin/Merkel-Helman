@@ -76,4 +76,32 @@ public class Crypto {
         // decrypt result with w and return
         return decrypted;
     }
+    
+    public boolean test(){
+        return test8bit() && test128bit();
+    }
+    
+    public boolean test8bit(){
+        // init
+        Crypto crypto = new Crypto();
+        String data = "a";
+        int[] encryptedData = crypto.encrypt(data.getBytes());
+        byte[] decryptedData = crypto.decrypt(encryptedData);
+        String decryptedStr = new String(decryptedData);
+        
+        U.p(decryptedStr);
+        return decryptedStr.equals(data);
+    }
+    
+    public boolean test128bit(){
+        // init
+        Crypto crypto = new Crypto();
+        String data = "1234567890abcdef";
+        int[] encryptedData = crypto.encrypt(data.getBytes());
+        byte[] decryptedData = crypto.decrypt(encryptedData);
+        String decryptedStr = new String(decryptedData);
+        
+        U.p(decryptedStr);
+        return decryptedStr.equals(data);
+    }
 }

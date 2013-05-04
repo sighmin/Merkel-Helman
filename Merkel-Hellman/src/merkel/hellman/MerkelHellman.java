@@ -14,13 +14,13 @@ public class MerkelHellman {
         // init
         Crypto crypto = new Crypto();
         
-        // Encrypt
-        int[] encryptedData = crypto.encrypt("a".getBytes());
+        boolean pass = crypto.test();
         
-        // Decrypt
-        byte[] decryptedData = crypto.decrypt(encryptedData);
-        
-        String decryptedStr = new String(decryptedData);
-        U.p(decryptedStr);
+        U.p("======================");
+        if (pass) {
+            U.p(":) PASSED!");
+        } else {
+            U.p(":( FAILED!");
+        }
     }
 }
