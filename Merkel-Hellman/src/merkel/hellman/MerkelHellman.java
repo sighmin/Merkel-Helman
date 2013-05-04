@@ -17,11 +17,11 @@ public class MerkelHellman {
         //U.p(U.createSuperincreasing());
         boolean pass = crypto.test();
         
-        U.p("======================");
+        U.p("\n\n\n======================");
         if (pass) {
-            U.p(":) PASSED!");
+            U.p(":) P A S S E D!");
         } else {
-            U.p(":( FAILED!");
+            U.p(":( F A I L E D!");
         }
     }
 }
