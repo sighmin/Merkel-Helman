@@ -12,6 +12,8 @@ public class Crypto {
         // q: prime larger than sum of superincreasing sequence
         // r: multiplier which is in [1,q)
         // w: superincreasing sequence
+    // public key:
+        // B: hard sequence
     
     private int[] w = {1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768};
     private int[] B = new int[w.length];
@@ -24,7 +26,6 @@ public class Crypto {
         for (int i = 0; i < w.length; ++i){
             B[i] = w[i] * r % q;
         }
-        //U.p(B);
     }
     
     public int[] encrypt(byte[] data){
