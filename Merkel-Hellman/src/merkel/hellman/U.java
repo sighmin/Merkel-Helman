@@ -75,6 +75,11 @@ public class U {
         return chars;
     }
    
+    public static int getModInverse(int multiplier, int prime) {
+        BigInteger inverse = new BigInteger(String.valueOf(multiplier)); 
+        inverse = inverse.modInverse(new BigInteger(String.valueOf(prime)));
+        return inverse.intValue();
+    }
     
     public static byte toByte(String str) {
         String temp = new String(str);
