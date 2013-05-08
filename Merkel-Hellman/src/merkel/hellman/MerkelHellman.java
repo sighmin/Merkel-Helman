@@ -91,7 +91,7 @@ public class MerkelHellman {
                 if (i == encryptedNum.length - 2) { //last element in array
                     System.out.print(encryptedNum[i]);
                 } else {
-                    System.out.print(encryptedNum[i] + "+");
+                    System.out.print(encryptedNum[i] + ",");
                 }
             }
         } catch (IOException e) {
