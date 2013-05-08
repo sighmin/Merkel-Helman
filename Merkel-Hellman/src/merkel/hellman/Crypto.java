@@ -31,8 +31,7 @@ public class Crypto {
     }
     
     public int[] encrypt(byte[] data){
-        U.p("\nIn encrypt()\n===");
-        System.out.println("Data length: " + data.length);
+        //U.p("\nIn encrypt()\n===");
         // encrypt for every block and get a number
         int[] result = new int[data.length / blocksize];
         for (int i = 0, j = 0; i < data.length; i += blocksize, ++j){ //i increments in blocks of 2
@@ -48,8 +47,8 @@ public class Crypto {
     }
     
     public int encryptBlock(byte[] block){
-        U.p("= encrypt block");
-        U.p(U.toCharArr(block));
+        //U.p("= encrypt block");
+        //U.p(U.toCharArr(block));
         
         char[] chardata = U.toCharArr(block);
         int encryptedNum = 0;
@@ -60,13 +59,13 @@ public class Crypto {
             }
         }
         
-        U.p(encryptedNum);
+        //U.p(encryptedNum);
         
         return encryptedNum;
     }
     
     public byte[] decrypt(int[] encrypted){
-        U.p("\nIn decrypt()\n===");
+        //U.p("\nIn decrypt()\n===");
         byte[] decrypted = new byte[encrypted.length * blocksize];
         
         // multiply encrypted number by modular inverse and mod by q      
@@ -79,16 +78,16 @@ public class Crypto {
             }
         }
         
-        U.p("\n(in decrypt(...)) Decrypted: ");
-        U.p(U.toCharArr(decrypted));
+        //U.p("\n(in decrypt(...)) Decrypted: ");
+        //U.p(U.toCharArr(decrypted));
         
         // decrypt result with w and return
         return decrypted;
     }
     
     public byte[] decryptBlock(int block){
-        U.p("= decrypt block");
-        U.p(block);
+        //U.p("= decrypt block");
+        //U.p(block);
         
         String res = "";
         int decryptedNum = block * modularInverse % prime;
@@ -106,19 +105,19 @@ public class Crypto {
             }
         }
         
-        // foreach block in the binary String, convert into a byte
+        // for each block in the binary String, convert into a byte
         for (int i = 0, j = 0; i < res.length(); i += 8, ++j){
             String tempString = res.substring(i, i+8);
             decryptedBlock[j] = U.toByte(tempString);
         }
         
-        U.p(U.toCharArr(decryptedBlock));
+        //U.p(U.toCharArr(decryptedBlock));
         
         return decryptedBlock;
     }
     
     public boolean test() {
-        return /*test8bit() && test16bit() &&*/ test16bit2()/* && test128bit()*/;
+        return /*test8bit() && */test16bit() && test16bit2()/* && test128bit()*/;
     }
     
     // We need to implement padding before including this test
@@ -141,29 +140,29 @@ public class Crypto {
     public boolean test16bit() {
         Crypto crypto = new Crypto();
         String data = "ab";
-        U.p("\n************ Testing " + data + " ************");
+        //U.p("\n************ Testing " + data + " ************");
         int[] encryptedData = crypto.encrypt(data.getBytes());
         byte[] decryptedData = crypto.decrypt(encryptedData);
         
         String decryptedStr = new String(decryptedData);
         
-        U.p(decryptedStr.equals(data) ? "Passed" : "Failed");
-        U.p("\nDecrypted string: " + decryptedStr);
+        //U.p(decryptedStr.equals(data) ? "Passed" : "Failed");
+        //U.p("\nDecrypted string: " + decryptedStr);
         return decryptedStr.equals(data);
     }
     
     public boolean test16bit2() {
         Crypto crypto = new Crypto();
         String data = "abcdef";
-        U.p("\n************ Testing " + data + " ************");
+        //U.p("\n************ Testing " + data + " ************");
         int[] encryptedData = crypto.encrypt(data.getBytes());
         byte[] decryptedData = crypto.decrypt(encryptedData);
         
         String decryptedStr = new String(decryptedData);
         
-        U.p(decryptedStr.equals(data) ? "Passed" : "Failed");
-        System.out.println("Data lenght: " + data.length());
-        U.p("\nDecrypted string: " + decryptedStr);
+        //U.p(decryptedStr.equals(data) ? "Passed" : "Failed");
+        //System.out.println("Data lenght: " + data.length());
+        //U.p("\nDecrypted string: " + decryptedStr);
         return decryptedStr.equals(data);
     }
     
