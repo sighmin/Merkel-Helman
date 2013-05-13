@@ -69,7 +69,7 @@ public class MerkelHellman {
         Crypto crypto = new Crypto();
         byte[] block = new byte[2];
         int arrLength = 1;
-        int[] encryptedNum = new int[arrLength];
+        int[] encryptedNum = new int[arrLength]; //we should consider using a larger data type for bigger input
         int bytesRead = 0;
 
         // Do encryption
