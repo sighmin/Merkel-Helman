@@ -103,12 +103,19 @@ public class U {
             int temp = 1;
             for (int j = 0; j < i; ++j){
                 temp += seq[j];
-                //temp = temp.add(seq[j]);
             }
             seq[i] = temp;
         }
         
         return seq;
+    }
+    
+    public static int calculate(int[] key) {
+        int val = 0;
+        for(int i = 0; i < key.length; ++i) {
+            val += key[i];
+        }
+        return val;
     }
         
 //    public static BigInteger[] createSuperincreasing() {

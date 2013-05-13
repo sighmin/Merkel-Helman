@@ -1,8 +1,6 @@
 
 package merkel.hellman;
 
-import java.io.UnsupportedEncodingException;
-import java.math.BigInteger;
 /**
  *
  * @author simon
@@ -16,17 +14,17 @@ public class Crypto {
     // public key:
         // B: hard sequence
     
-    private int[] superIncSeq = {1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768};
-    private int[] publicKey = new int[superIncSeq.length];
-    private int prime = 32771;
-    private int multiplier = 2588;
-    private int modularInverse = U.getModInverse(multiplier, prime);
-    private int blocksize = superIncSeq.length/8; // 8bits in a byte ;) and will always be 2
+    private int[] privateKey = {1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768}; //sum = 65535
+    private int[] publicKey = new int[privateKey.length];
+    private int modulo = 65537; //has to bigger than the sum of private key
+    private int multiplier = 22588; //this number can't be too small
+    private int modularInverse = U.getModInverse(multiplier, modulo);
+    private int blocksize = privateKey.length/8; // 8bits in a byte ;) and will always be 2
     
     public Crypto(){
         // generate public key B (hard sequence)
-        for (int i = 0; i < superIncSeq.length; ++i){
-            publicKey[i] = superIncSeq[i] * multiplier % prime;
+        for (int i = 0; i < privateKey.length; ++i){
+            publicKey[i] = privateKey[i] * multiplier % modulo;
         }
     }
     
@@ -90,14 +88,14 @@ public class Crypto {
         //U.p(block);
         
         String res = "";
-        int decryptedNum = block * modularInverse % prime;
+        int decryptedNum = block * modularInverse % modulo;
         byte[] decryptedBlock = new byte[blocksize];
         
         // build string representation of decrypted block
         int temp = decryptedNum;
-        for (int i = superIncSeq.length - 1; i >= 0; --i) {  
-            if(temp - superIncSeq[i] >= 0) {
-                temp = temp - superIncSeq[i];
+        for (int i = privateKey.length - 1; i >= 0; --i) {  
+            if(temp - privateKey[i] >= 0) {
+                temp = temp - privateKey[i];
                 res = "1" + res; 
             } 
             else {

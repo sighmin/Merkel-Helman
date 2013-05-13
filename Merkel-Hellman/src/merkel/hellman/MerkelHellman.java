@@ -40,16 +40,18 @@ public class MerkelHellman {
 
     public static void test() {
         // init
-        Crypto crypto = new Crypto();
-        // test
-        boolean pass = crypto.test();
-
-        U.p("\n\n\n======================");
-        if (pass) {
-            U.p(":) P A S S E D!");
-        } else {
-            U.p(":( F A I L E D!");
-        }
+        int[] key = {1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768};
+        System.out.println("Sum of key: " + U.calculate(key));
+//        Crypto crypto = new Crypto();
+//        // test
+//        boolean pass = crypto.test();
+//
+//        U.p("\n\n\n======================");
+//        if (pass) {
+//            U.p(":) P A S S E D!");
+//        } else {
+//            U.p(":( F A I L E D!");
+//        }
     }
 
     public static void help() {
@@ -85,13 +87,34 @@ public class MerkelHellman {
                 // Read next block
                 bytesRead = System.in.read(block);
             }
-            
+            boolean moreBytesRead = false;
+            if (bytesRead > 0) {
+                moreBytesRead = true;
+                //More bytes read, but not enough to fill a block, so pad the remaining block
+                for (int i = bytesRead; i < 2; ++i) {
+                    block[i] = 0;
+                }
+
+                encryptedNum[arrLength - 1] = crypto.encryptBlock(block);
+            }
+
             // this prints out to std.out the int[] of encrypted numbers
-            for (int i = 0; i < encryptedNum.length - 1; ++i) {
-                if (i == encryptedNum.length - 2) { //last element in array
-                    System.out.print(encryptedNum[i]);
-                } else {
-                    System.out.print(encryptedNum[i] + ",");
+            if (moreBytesRead) {
+                for (int i = 0; i < encryptedNum.length; ++i) {
+                    if (i == encryptedNum.length - 1) { //last element in array
+                        System.out.print(encryptedNum[i]);
+                    } else {
+                        System.out.print(encryptedNum[i] + ",");
+                    }
+                }
+            }
+            else {
+                for (int i = 0; i < encryptedNum.length - 1; ++i) {
+                    if (i == encryptedNum.length - 2) { //last element in array
+                        System.out.print(encryptedNum[i]);
+                    } else {
+                        System.out.print(encryptedNum[i] + ",");
+                    }
                 }
             }
         } catch (IOException e) {
@@ -109,22 +132,23 @@ public class MerkelHellman {
             while (scan.hasNext()) {
                 input += scan.nextLine();
             }
-            
+
             String[] encryptedNum = input.split(",");
             int[] decryptTheseNumbers = new int[encryptedNum.length];
-            
+
             // parse string representation of encrypted numbers to int for decryption
-            for(int i = 0; i < encryptedNum.length; ++i) {
+            for (int i = 0; i < encryptedNum.length; ++i) {
                 decryptTheseNumbers[i] = Integer.parseInt(encryptedNum[i]);
             }
-            
+
             byte[] decryptedData = crypto.decrypt(decryptTheseNumbers);
             String decryptedStr = new String(decryptedData);
-            
+
             System.out.println(decryptedStr);
         } finally {
-            if(scan != null)
+            if (scan != null) {
                 scan.close();
+            }
         }
     }
 }
