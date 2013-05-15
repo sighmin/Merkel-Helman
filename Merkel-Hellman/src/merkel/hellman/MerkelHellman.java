@@ -43,16 +43,17 @@ public class MerkelHellman {
         // init
         int[] key = {1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768};
         System.out.println("Sum of key: " + U.calculate(key));
-//        Crypto crypto = new Crypto();
-//        // test
-//        boolean pass = crypto.test();
-//
-//        U.p("\n\n\n======================");
-//        if (pass) {
-//            U.p(":) P A S S E D!");
-//        } else {
-//            U.p(":( F A I L E D!");
-//        }
+        Crypto crypto = new Crypto();
+        
+        // test
+        boolean pass = crypto.test();
+
+        U.p("\n\n\n======================");
+        if (pass) {
+            U.p(":) P A S S E D!");
+        } else {
+            U.p(":( F A I L E D!");
+        }
     }
 
     public static void help() {

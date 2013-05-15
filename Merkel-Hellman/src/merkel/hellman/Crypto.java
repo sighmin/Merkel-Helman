@@ -115,66 +115,38 @@ public class Crypto {
     }
     
     public boolean test() {
-        return /*test8bit() && */test16bit() && test16bit2()/* && test128bit()*/;
-    }
-    
-    // We need to implement padding before including this test
-    public boolean test8bit() {
-        // init
-//        Crypto crypto = new Crypto();
-//        String data = "";
-//        U.p("\n***Testing " + data + " ***");
-//        int[] encryptedData = crypto.encrypt(data.getBytes());
-//        byte[] decryptedData = crypto.decrypt(encryptedData);
-//        U.p(U.toCharArr(decryptedData));
-//        
-//        String decryptedStr = new String(decryptedData);
-//        
-//        U.p(decryptedStr);
-//        return decryptedStr.equals(data);
-        return true;
+        return test16bit() && test16bit2() && test16bitpadding();
     }
     
     public boolean test16bit() {
         Crypto crypto = new Crypto();
         String data = "ab";
-        //U.p("\n************ Testing " + data + " ************");
         int[] encryptedData = crypto.encrypt(data.getBytes());
         byte[] decryptedData = crypto.decrypt(encryptedData);
         
         String decryptedStr = new String(decryptedData);
         
-        //U.p(decryptedStr.equals(data) ? "Passed" : "Failed");
-        //U.p("\nDecrypted string: " + decryptedStr);
         return decryptedStr.equals(data);
     }
     
     public boolean test16bit2() {
         Crypto crypto = new Crypto();
         String data = "abcdef";
-        //U.p("\n************ Testing " + data + " ************");
+        int[] encryptedData = crypto.encrypt(data.getBytes());
+        byte[] decryptedData = crypto.decrypt(encryptedData);
+        
+        String decryptedStr = new String(decryptedData);
+        return decryptedStr.equals(data);
+    }
+    
+    public boolean test16bitpadding() {
+        Crypto crypto = new Crypto();
+        String data = "abcde";
         int[] encryptedData = crypto.encrypt(data.getBytes());
         byte[] decryptedData = crypto.decrypt(encryptedData);
         
         String decryptedStr = new String(decryptedData);
         
-        //U.p(decryptedStr.equals(data) ? "Passed" : "Failed");
-        //System.out.println("Data lenght: " + data.length());
-        //U.p("\nDecrypted string: " + decryptedStr);
         return decryptedStr.equals(data);
-    }
-    
-    // We need to confirm key length before including this test
-    public boolean test128bit(){
-        // init
-//        Crypto crypto = new Crypto();
-//        String data = "1234567890abcdef";
-//        int[] encryptedData = crypto.encrypt(data.getBytes());
-//        byte[] decryptedData = crypto.decrypt(encryptedData);
-//        String decryptedStr = new String(decryptedData);
-//        
-//        U.p(decryptedStr);
-//        return decryptedStr.equals(data);
-        return true;
     }
 }
