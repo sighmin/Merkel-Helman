@@ -1,7 +1,8 @@
 package merkel.hellman;
 
 import java.io.IOException;
-import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 import java.util.Scanner;
 
 /**
@@ -66,20 +67,27 @@ public class MerkelHellman {
 
     public static void encrypt() {
         Crypto crypto = new Crypto();
+        int blocksize = 2;
         
         try {
             // Normal 2 byte encrypt
-            byte[] block = new byte[2];
-            int bytesRead = System.in.read(block);
+            byte[] block = new byte[blocksize];
+            int bytesRead = System.in.read(block, 0, block.length);
+            
+            //U.p(block);
+            //System.out.println();
+            //System.out.println(System.getProperty("file.encoding"));
+            
             while (bytesRead == 2) {
                 System.out.println(crypto.encryptBlock(block));
-                bytesRead = System.in.read(block);
+                //bytesRead = System.in.read(block);
+                bytesRead = System.in.read(block, 0, block.length);
             }
             // Pad input block if not large enough for block
             boolean moreBytesRead = false;
             if (bytesRead > 0) {
                 moreBytesRead = true;
-                for (int i = bytesRead; i < 2; ++i) {
+                for (int i = bytesRead; i < blocksize; ++i) {
                     block[i] = 0;
                 }
                 System.out.println(crypto.encryptBlock(block));
