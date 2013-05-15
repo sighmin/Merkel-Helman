@@ -46,7 +46,7 @@ public class Crypto {
     
     public int encryptBlock(byte[] block){
         //U.p("= encrypt block");
-        //U.p(U.toCharArr(block));
+        U.p(U.toCharArr(block));
         
         char[] chardata = U.toCharArr(block);
         int encryptedNum = 0;
