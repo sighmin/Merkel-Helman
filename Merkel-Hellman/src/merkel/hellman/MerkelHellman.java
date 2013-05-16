@@ -41,10 +41,13 @@ public class MerkelHellman {
 
     public static void test() {
         // init
-        int[] key = {1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768};
-        System.out.println("Sum of key: " + U.calculate(key));
         Crypto crypto = new Crypto();
-        
+        byte signed = -1;
+        int uns = signed & 0xFF;
+        byte newS = (byte)uns;
+        System.out.println("uns: " + uns + " b: " + signed + " newS: " + newS);
+        System.out.println("binary of uns: " + Integer.toBinaryString(uns) + "\nbinary of signed: " + Integer.toBinaryString(signed) + "\nbinary of newS: " + Integer.toBinaryString(newS));
+       
         // test
         boolean pass = crypto.test();
 
@@ -69,25 +72,25 @@ public class MerkelHellman {
     public static void encrypt() {
         Crypto crypto = new Crypto();
         int blocksize = 2;
-        
+        // Normal 2 byte encrypt
+        byte[] block = new byte[blocksize];
+        //int bytesRead = System.in.read(block, 0, block.length);
+        int bytesRead = 0;
+
         try {
-            // Normal 2 byte encrypt
-            byte[] block = new byte[blocksize];
-            int bytesRead = System.in.read(block, 0, block.length);
-            
             //U.p(block);
             //System.out.println();
             //System.out.println(System.getProperty("file.encoding"));
             
+            bytesRead = System.in.read(block, 0, block.length);;
             while (bytesRead == 2) {
                 System.out.println(crypto.encryptBlock(block));
                 //bytesRead = System.in.read(block);
                 bytesRead = System.in.read(block, 0, block.length);
             }
+            
             // Pad input block if not large enough for block
-            boolean moreBytesRead = false;
             if (bytesRead > 0) {
-                moreBytesRead = true;
                 for (int i = bytesRead; i < blocksize; ++i) {
                     block[i] = 0;
                 }
