@@ -1,5 +1,7 @@
 package merkel.hellman;
 
+import java.io.*;
+
 /**
  *
  * @author simon
@@ -12,18 +14,41 @@ public class Crypto {
     // w: superincreasing sequence
     // public key:
     // B: hard sequence
-    private int[] privateKey = {1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768}; //sum = 65535
-    private int[] publicKey = new int[privateKey.length];
-    private int modulo = 65537; //has to bigger than the sum of private key
+    private final int keylength = 16;
+    private int[] privateKey = new int[keylength];;
+    private int[] publicKey = new int[keylength];
+    private int modulo; //has to bigger than the sum of private key
     private int multiplier = 22588; //this number can't be too small
-    private int modularInverse = U.getModInverse(multiplier, modulo);
-    private int blocksize = privateKey.length / 8; // 8bits in a byte ;) and will always be 2
+    private int modularInverse;// = U.getModInverse(multiplier, modulo);
+    private int blocksize = keylength / 8; // 8bits in a byte ;) and will always be 2
 
-    public Crypto() {
-        // generate public key B (hard sequence)
-        for (int i = 0; i < privateKey.length; ++i) {
-            publicKey[i] = privateKey[i] * multiplier % modulo;
+    public Crypto(){ /* Exists for testing methods */ }
+    
+    // encrypt
+    public Crypto(String keyString) {
+        String[] key = keyString.split(",");
+        for (int i = 0; i < keylength; ++i) {
+            this.publicKey[i] = Integer.parseInt(key[i]);
         }
+        
+//        U.p(this.publicKey);
+//        System.exit(0);
+    }
+    
+    // decrypt
+    public Crypto(String modulostring, String multiplierString, String[] keystring) {
+       this.modulo = Integer.parseInt(modulostring);
+       this.multiplier = Integer.parseInt(multiplierString);
+       for (int i = 0; i < keylength; ++i) {
+           this.privateKey[i] = Integer.parseInt(keystring[i]);
+       }
+       this.modularInverse = U.getModInverse(this.multiplier, this.modulo);
+       
+//       U.p(this.modulo);
+//       U.p(this.multiplier);
+//       U.p(this.privateKey);
+//       U.p(U.calculate(privateKey));
+//       System.exit(0);
     }
 
     public int[] encrypt(byte[] data) {
@@ -108,6 +133,55 @@ public class Crypto {
         //U.p(U.toCharArr(decryptedBlock));
 
         return decryptedBlock;
+    }
+    
+    public void keygen() {
+        // gen private key
+        this.privateKey = U.createSuperincreasing();
+        System.out.println("Is superincreasing: " + U.isSuperIncreasing(this.privateKey));
+        
+        // find modulo
+        int sum = 0;
+        for (int i : privateKey) { sum += i; }
+        this.modulo = U.findNextPrime(sum);
+        //this.multiplier = U.getCoPrime(this.modulo);
+        System.out.println("mod: "+modulo+" mul: "+multiplier);
+        
+        for (int i = 0; i < privateKey.length; ++i) {
+            publicKey[i] = privateKey[i] * multiplier % modulo;
+        }
+        
+        // write private key to file
+        try {
+            BufferedWriter pf = new BufferedWriter(new FileWriter("private.key"));
+            //print modulo
+            pf.write(Integer.toString(this.modulo) + ";");
+            //print multiplier
+            pf.write(Integer.toString(this.multiplier) + ";");
+            //print superincreasing sequence
+            for (int i = 0; i < privateKey.length; ++i){
+                pf.write(Integer.toString(privateKey[i]));
+                if (i != keylength - 1) {
+                    pf.write(",");
+                }
+            }
+            pf.close();
+        } catch (Exception e){
+            System.exit(2);
+        }
+        // write public key to file
+        try {
+            BufferedWriter pf = new BufferedWriter(new FileWriter("public.key"));
+            for (int i = 0; i < privateKey.length; ++i){
+                pf.write(Integer.toString(publicKey[i]));
+                if (i != keylength - 1) {
+                    pf.write(",");
+                }
+            }
+            pf.close();
+        } catch (Exception e){
+            System.exit(2);
+        }
     }
 
     public boolean test() {

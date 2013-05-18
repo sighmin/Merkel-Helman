@@ -1,7 +1,6 @@
 package merkel.hellman;
 
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.nio.charset.Charset;
 import java.util.Scanner;
 
@@ -28,9 +27,11 @@ public class MerkelHellman {
 
             // Dispatch function
             if (arguments.contains("encrypt")) {
-                encrypt();
+                encrypt(args);
             } else if (arguments.contains("decrypt")) {
-                decrypt();
+                decrypt(args);
+            } else if (arguments.contains("keygen")){
+                keygen();
             } else if (arguments.contains("help")) {
                 help();
             } else if (arguments.contains("test")) {
@@ -69,8 +70,23 @@ public class MerkelHellman {
                 + "  cat encrypted | java -jar Merkel-Hellman.jar > decrypted");
     }
 
-    public static void encrypt() {
-        Crypto crypto = new Crypto();
+    public static void encrypt(String[] args) {
+        // Read key file
+        String filename = "";
+        String keyString = "";
+        for (String s : args) {
+            if (s.equals("public.key")){
+                filename = s;
+            }
+        }
+        try {
+            BufferedReader bf = new BufferedReader(new FileReader(filename));
+            keyString = bf.readLine();
+        } catch (Exception e) {
+            System.exit(2);
+        }
+        
+        Crypto crypto = new Crypto(keyString);
         int blocksize = 2;
         // Normal 2 byte encrypt
         byte[] block = new byte[blocksize];
@@ -101,10 +117,27 @@ public class MerkelHellman {
         }
     }
 
-    public static void decrypt() {
+    public static void decrypt(String[] args) {
+        // Read key file
+        String filename = "";
+        String keyString = "";
+        for (String s : args) {
+            if (s.equals("private.key")){
+                filename = s;
+            }
+        }
+        try {
+            BufferedReader bf = new BufferedReader(new FileReader(filename));
+            keyString = bf.readLine();
+        } catch (Exception e) {
+            System.exit(2);
+        }
+        String[] keydata = keyString.split(";");
+        String[] key = keydata[2].split(",");
+        
         Scanner scan = null;
         try {
-            Crypto crypto = new Crypto();
+            Crypto crypto = new Crypto(keydata[0], keydata[1], key);
             scan = new Scanner(System.in);
             String input;
             while (scan.hasNext()) {
@@ -112,14 +145,22 @@ public class MerkelHellman {
                 int[] encryptedint = new int[1];
                 encryptedint[0] = Integer.parseInt(input);
                 byte[] decryptedData = crypto.decrypt(encryptedint);
-                String decryptedStr = new String(decryptedData);
-
-                System.out.print(decryptedStr);
+                System.out.write(decryptedData, 0, decryptedData.length);
             }
         } finally {
             if (scan != null) {
                 scan.close();
             }
         }
+    }
+    
+    public static void keygen(){
+        Crypto crypto = new Crypto();
+        crypto.keygen();
+        
+        //int[] publickey = crypto.getPublicKey();
+        //int[] privatekey = crypto.getPrivateKey();
+        
+        // Write keys to files.
     }
 }
