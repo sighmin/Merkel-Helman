@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Fundamental analysis - Wikipedia, the free encyclopedia</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.22wmf3" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Fundamental_analysis&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Fundamental_analysis&amp;action=edit" />
+<link rel="shortcut icon" href="//bits.wikimedia.org/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cteahouse%7Cext.wikihiero%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmw.PopUpMediaTransform%7Cskins.vector&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:d11e4771671c2d6cdedf7c90d8131cd5 */</style>
+
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Fundamental_analysis","wgTitle":"Fundamental analysis","wgCurRevisionId":554662329,"wgArticleId":11684,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["All articles with unsourced statements","Articles with unsourced statements from November 2010","Fundamental analysis","Commodities market","Derivatives (finance)","Foreign exchange market","Stock market"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Fundamental_analysis","wgRestrictionEdit":[],"wgRestrictionMove":[],"wgVectorEnabledModules":{"collapsiblenav":true,"collapsibletabs":true,"expandablesearch":false,"footercleanup":true,"sectioneditlinks":false,"experiments":true},"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"templateEditor":false,"templates":false,"preview":false,"previewDialog":false,"publish":false,"toc":false},"wgArticleFeedbackv5Permissions":{"aft-reader":true,"aft-member":false,"aft-editor":false,"aft-monitor":false,"aft-administrator":false,"aft-oversighter":false},"wgVisualEditor":{"isPageWatched":false},"wikilove-recipient":"","wikilove-anon":0,"wgGuidedTourHelpGuiderUrl":"Help:Guided tours/guider","wgGuidedTourTestWikitextDescription":"A guider in your on-wiki tour can contain wikitext using onShow and parseDescription. Use it to create a wikilink to the \u003Ca href=\"/wiki/Help:Guided_tours\" title=\"Help:Guided tours\"\u003EGuided tours documentation\u003C/a\u003E. Or an external link \u003Ca rel=\"nofollow\" class=\"external text\" href=\"https://github.com/tychay/mwgadget.GuidedTour\"\u003Eto GitHub\u003C/a\u003E, for instance.","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","Geo":{"city":"","country":""},"wgNoticeProject":"wikipedia","aftv5Article":{"id":11684,"title":"Fundamental analysis","namespace":0,"categories":["All articles with unsourced statements","Articles with unsourced statements from November 2010","Commodities market","Derivatives (finance)","Foreign exchange market","Fundamental analysis","Stock market"],"permissionLevel":"aft-reader"}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":false,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,
+"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"useeditwarning":1,"flaggedrevssimpleui":1,"flaggedrevsstable":0,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"vector-simplesearch":1,"vector-collapsiblenav":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"aftv5-last-filter":null,"wikilove-enabled":1,"echo-subscriptions-web-page-review":true,"echo-subscriptions-email-page-review":false,"ep_showtoplink":false,"ep_bulkdelorgs":false,"ep_bulkdelcourses":true,"ep_showdyk":true,"echo-notify-show-link":true,"echo-show-alert":true,"echo-email-frequency":0,"echo-subscriptions-email-system":true,"echo-subscriptions-web-system":true,"echo-subscriptions-email-other":false,"echo-subscriptions-web-other":true,"echo-subscriptions-email-edit-user-talk":false,"echo-subscriptions-web-edit-user-talk":true,"echo-subscriptions-email-reverted":false,"echo-subscriptions-web-reverted":true,"echo-subscriptions-email-article-linked"
+:false,"echo-subscriptions-web-article-linked":false,"echo-subscriptions-email-mention":false,"echo-subscriptions-web-mention":true,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false,"searchNs108":false,"searchNs109":false,"searchNs446":false,"searchNs447":false,"searchNs710":false,"searchNs711":false,"searchNs828":false,"searchNs829":false,"gadget-teahouse":1,"gadget-ReferenceTooltips":1,"gadget-HotCat":1,"gadget-DRN-wizard":1,"gadget-charinsert":1,"gadget-mySandbox":1});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: enwiki:resourceloader:filter:minify-js:7:80a5db30b7302df08d2995e60d0dcee6 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.vector.footerCleanup","ext.wikimediaShopLink.core","ext.postEdit","wikibase.client.init","ext.centralNotice.bannerController"]);
+}</script>
+<script src="//bits.wikimedia.org/geoiplookup"></script><link rel="dns-prefetch" href="//meta.wikimedia.org" /><!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static-1.22wmf3/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Fundamental_analysis skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- CentralNotice --></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Fundamental analysis</span></h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-navigation">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="vertical-navbox nowraplinks plainlist" cellspacing="5" cellpadding="0" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;width:auto">
+<tr>
+<th class="" style=";padding:0.2em 0.4em 0.2em;;font-size:145%;line-height:1.2em;"><a href="/wiki/Financial_market" title="Financial market">Financial markets</a></th>
+</tr>
+<tr>
+<td class="" style="padding:0.2em 0 0.4em;"><a href="/wiki/File:Philippine-stock-market-board.jpg" class="image"><img alt="Philippine-stock-market-board.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Philippine-stock-market-board.jpg/135px-Philippine-stock-market-board.jpg" width="135" height="101" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Philippine-stock-market-board.jpg/203px-Philippine-stock-market-board.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Philippine-stock-market-board.jpg/270px-Philippine-stock-market-board.jpg 2x" /></a></td>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;&#160;;">
+<ul>
+<li><a href="/wiki/Market" title="Market">Public market</a></li>
+</ul>
+<hr />
+<ul>
+<li><a href="/wiki/Exchange_(organized_market)" title="Exchange (organized market)">Exchange</a></li>
+<li><a href="/wiki/Securities" title="Securities" class="mw-redirect">Securities</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="navbox-abovebelow" style="padding:0.1em;;;"><a href="/wiki/Bond_market" title="Bond market">Bond market</a></th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;&#160;;">
+<ul>
+<li><a href="/wiki/Bond_valuation" title="Bond valuation">Bond valuation</a></li>
+<li><a href="/wiki/Corporate_bond" title="Corporate bond">Corporate bond</a></li>
+<li><a href="/wiki/Fixed_income" title="Fixed income">Fixed income</a></li>
+<li><a href="/wiki/Government_bond" title="Government bond">Government bond</a></li>
+<li><a href="/wiki/High-yield_debt" title="High-yield debt">High-yield debt</a></li>
+<li><a href="/wiki/Municipal_bond" title="Municipal bond">Municipal bond</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="navbox-abovebelow" style="padding:0.1em;;;"><a href="/wiki/Stock_market" title="Stock market">Stock market</a></th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;&#160;;">
+<ul>
+<li><a href="/wiki/Common_stock" title="Common stock">Common stock</a></li>
+<li><a href="/wiki/Preferred_stock" title="Preferred stock">Preferred stock</a></li>
+<li><a href="/wiki/Registered_share" title="Registered share">Registered share</a></li>
+<li><a href="/wiki/Stock" title="Stock">Stock</a></li>
+<li><a href="/wiki/Stock_certificate" title="Stock certificate">Stock certificate</a></li>
+<li><a href="/wiki/Stock_exchange" title="Stock exchange">Stock exchange</a></li>
+<li><a href="/wiki/Voting_share" title="Voting share" class="mw-redirect">Voting share</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="navbox-abovebelow" style="padding:0.1em;;;"><a href="/wiki/Derivatives_market" title="Derivatives market">Derivatives market</a></th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;&#160;;">
+<ul>
+<li><a href="/wiki/Credit_derivative" title="Credit derivative">Credit derivative</a></li>
+<li><a href="/wiki/Futures_exchange" title="Futures exchange">Futures exchange</a></li>
+<li><a href="/wiki/Hybrid_security" title="Hybrid security">Hybrid security</a></li>
+<li><a href="/wiki/Securitization" title="Securitization">Securitization</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="navbox-abovebelow" style="padding:0.1em;;;"><a href="/wiki/Over-the-counter_(finance)" title="Over-the-counter (finance)">Over-the-counter</a></th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;&#160;;">
+<ul>
+<li><a href="/wiki/Forward_contract" title="Forward contract">Forwards</a></li>
+<li><a href="/wiki/Option_(finance)" title="Option (finance)">Options</a></li>
+<li><a href="/wiki/Spot_market" title="Spot market">Spot market</a></li>
+<li><a href="/wiki/Swap_(finance)" title="Swap (finance)">Swaps</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="navbox-abovebelow" style="padding:0.1em;;;"><a href="/wiki/Foreign_exchange_market" title="Foreign exchange market">Foreign exchange</a></th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;&#160;;">
+<ul>
+<li><a href="/wiki/Currency" title="Currency">Currency</a></li>
+<li><a href="/wiki/Exchange_rate" title="Exchange rate">Exchange rate</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="navbox-abovebelow" style="padding:0.1em;;;">Other markets</th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;&#160;;">
+<ul>
+<li><a href="/wiki/Commodity_market" title="Commodity market">Commodity market</a></li>
+<li><a href="/wiki/Money_market" title="Money market">Money market</a></li>
+<li><a href="/wiki/Reinsurance_market" title="Reinsurance market" class="mw-redirect">Reinsurance market</a></li>
+<li><a href="/wiki/Real_estate_market" title="Real estate market" class="mw-redirect">Real estate market</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="navbox-abovebelow" style="padding:0.1em;;;"><a href="/wiki/Trader_(finance)" title="Trader (finance)">Practical trading</a></th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;&#160;;">
+<ul>
+<li><a href="/wiki/Clearing_house_(finance)" title="Clearing house (finance)">Clearing house</a></li>
+<li><a href="/wiki/Financial_market_participants" title="Financial market participants">Financial market participants</a></li>
+<li><a href="/wiki/Financial_regulation" title="Financial regulation">Financial regulation</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="navbox-abovebelow" style="padding:0.1em;;;"><a href="/wiki/Finance" title="Finance">Finance</a> series</th>
+</tr>
+<tr>
+<td class="" style="padding:0 0.1em 0.4em;&#160;;">
+<ul>
+<li><a href="/wiki/Bank" title="Bank">Banks and banking</a></li>
+<li><a href="/wiki/Corporate_finance" title="Corporate finance">Corporate finance</a></li>
+<li><a href="/wiki/Personal_finance" title="Personal finance">Personal finance</a></li>
+<li><a href="/wiki/Public_finance" title="Public finance">Public finance</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;font-size:115%;">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Financial_markets" title="Template:Financial markets"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Financial_markets" title="Template talk:Financial markets"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Financial_markets&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p><b>Fundamental analysis</b> of a business involves analyzing its <a href="/wiki/Financial_statement" title="Financial statement">financial statements</a> and health, its management and competitive advantages, and its <a href="/wiki/Competition" title="Competition">competitors</a> and <a href="/wiki/Market" title="Market">markets</a>. When applied to <a href="/wiki/Futures_contract" title="Futures contract">futures</a> and <a href="/wiki/Foreign_exchange_market" title="Foreign exchange market">forex</a>, it focuses on the overall state of the economy, interest rates, production, earnings, and management. When analyzing a stock, futures contract, or currency using fundamental analysis there are two basic approaches one can use; bottom up analysis and top down analysis.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> The term is used to distinguish such analysis from other types of <a href="/wiki/Investment_analysis" title="Investment analysis" class="mw-redirect">investment analysis</a>, such as <a href="/wiki/Quantitative_analysis_(finance)" title="Quantitative analysis (finance)" class="mw-redirect">quantitative analysis</a> and <a href="/wiki/Technical_analysis" title="Technical analysis">technical analysis</a>.</p>
+<p>Fundamental analysis is performed on historical and present data, but with the goal of making financial <a href="/wiki/Forecasts" title="Forecasts" class="mw-redirect">forecasts</a>. There are several possible objectives:</p>
+<ul>
+<li>to conduct a company <a href="/wiki/Stock_valuation" title="Stock valuation">stock valuation</a> and predict its probable price evolution,</li>
+<li>to make a projection on its business performance,</li>
+<li>to evaluate its management and make internal business decisions,</li>
+<li>to calculate its <a href="/wiki/Credit_risk" title="Credit risk">credit risk</a>.</li>
+</ul>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Two_analytical_models"><span class="tocnumber">1</span> <span class="toctext">Two analytical models</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Use_by_different_portfolio_styles"><span class="tocnumber">2</span> <span class="toctext">Use by different portfolio styles</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Top-down_and_bottom-up"><span class="tocnumber">3</span> <span class="toctext">Top-down and bottom-up</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Procedures"><span class="tocnumber">4</span> <span class="toctext">Procedures</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Criticisms"><span class="tocnumber">5</span> <span class="toctext">Criticisms</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Two_analytical_models">Two analytical models</span> <span class="mw-editsection">[<a href="/w/index.php?title=Fundamental_analysis&amp;action=edit&amp;section=1" title="Edit section: Two analytical models">edit</a>]</span></h2>
+<p>When the objective of the analysis is to determine what stock to buy and at what price, there are two basic methodologies</p>
+<ol>
+<li>Fundamental analysis maintains that markets may misprice a security in the short run but that the "correct" price will eventually be reached. <a href="/wiki/Profit_(accounting)" title="Profit (accounting)">Profits</a> can be made by purchasing the mispriced security and then waiting for the market to recognize its "mistake" and reprice the security.</li>
+<li><a href="/wiki/Technical_analysis" title="Technical analysis">Technical analysis</a> maintains that all information is reflected already in the stock price. Trends 'are your friend' and sentiment changes predate and predict trend changes. Investors' emotional responses to price movements lead to recognizable price chart patterns. Technical analysis does not care what the 'value' of a stock is. Their price predictions are only extrapolations from historical price patterns.</li>
+</ol>
+<p>Investors can use any or all of these different but somewhat complementary methods for stock picking. For example many fundamental investors use technicals for deciding entry and exit points. Many technical investors use fundamentals to limit their universe of possible stock to 'good' companies.</p>
+<p>The choice of stock analysis is determined by the investor's belief in the different paradigms for "how the stock market works". See the discussions at <a href="/wiki/Efficient-market_hypothesis" title="Efficient-market hypothesis">efficient-market hypothesis</a>, <a href="/wiki/Random_walk_hypothesis" title="Random walk hypothesis">random walk hypothesis</a>, <a href="/wiki/Capital_asset_pricing_model" title="Capital asset pricing model">capital asset pricing model</a>, <a href="/wiki/Fed_model" title="Fed model">Fed model</a> Theory of Equity Valuation, <a href="/wiki/Market-based_valuation" title="Market-based valuation">market-based valuation</a>, and <a href="/wiki/Behavioral_finance" title="Behavioral finance" class="mw-redirect">behavioral finance</a>.</p>
+<p>Fundamental analysis includes:</p>
+<ol>
+<li>Economic analysis</li>
+<li>Industry analysis</li>
+<li>Company analysis</li>
+</ol>
+<p>On the basis of these three analyses the intrinsic value of the shares are determined. This is considered as the true value of the share. If the intrinsic value is higher than the market price it is recommended to buy the share . If it is equal to market price hold the share and if it is less than the market price sell the shares.</p>
+<h2><span class="mw-headline" id="Use_by_different_portfolio_styles">Use by different portfolio styles</span> <span class="mw-editsection">[<a href="/w/index.php?title=Fundamental_analysis&amp;action=edit&amp;section=2" title="Edit section: Use by different portfolio styles">edit</a>]</span></h2>
+<p>Investors may use fundamental analysis within different <a href="/wiki/Portfolio_(finance)" title="Portfolio (finance)">portfolio</a> <a href="/wiki/Investment_management" title="Investment management">management</a> <a href="/wiki/Investor_profile" title="Investor profile">styles</a>.</p>
+<ul>
+<li><b><a href="/wiki/Buy_and_hold" title="Buy and hold">Buy and hold</a></b> investors believe that latching onto good businesses allows the investor's asset to grow with the business. Fundamental analysis lets them find 'good' companies, so they lower their risk and probability of wipe-out.</li>
+<li>Managers may use fundamental analysis to correctly value 'good' and 'bad' companies. Eventually 'bad' companies' stock goes up and down, creating opportunities for profits.</li>
+<li>Managers may also consider the economic cycle in determining whether conditions are 'right' to buy fundamentally suitable companies.</li>
+<li><b><a href="/wiki/Contrarian" title="Contrarian">Contrarian</a> investors</b> distinguish "in the short run, the market is a voting machine, not a weighing machine".<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup> Fundamental analysis allows you to make your own decision on value, and ignore the market.</li>
+<li><b><a href="/wiki/Value_investing" title="Value investing">Value investors</a></b> restrict their attention to under-valued companies, believing that 'it's hard to fall out of a ditch'. The value comes from fundamental analysis.</li>
+<li>Managers may use fundamental analysis to determine future growth rates for buying high priced <a href="/wiki/Growth_stock" title="Growth stock">growth stocks</a>.</li>
+<li>Managers may also include fundamental factors along with technical factors into computer models (<a href="/wiki/Quantitative_analysis_(finance)" title="Quantitative analysis (finance)" class="mw-redirect">quantitative analysis</a>).</li>
+</ul>
+<h2><span class="mw-headline" id="Top-down_and_bottom-up">Top-down and bottom-up</span> <span class="mw-editsection">[<a href="/w/index.php?title=Fundamental_analysis&amp;action=edit&amp;section=3" title="Edit section: Top-down and bottom-up">edit</a>]</span></h2>
+<p>Investors can use either a top-down or bottom-up approach.</p>
+<ul>
+<li>The top-down investor starts his or her analysis with global economics, including both international and national <a href="/wiki/Economic_indicator" title="Economic indicator">economic indicators</a>, such as <a href="/wiki/GDP" title="GDP" class="mw-redirect">GDP</a> growth rates, <a href="/wiki/Inflation" title="Inflation">inflation</a>, <a href="/wiki/Interest" title="Interest">interest</a> rates, <a href="/wiki/Exchange_rate" title="Exchange rate">exchange rates</a>, <a href="/wiki/Productivity_(economics)" title="Productivity (economics)" class="mw-redirect">productivity</a>, and energy prices. He or she narrows his or her search down to regional/industry analysis of total sales, price levels, the effects of competing products, foreign competition, and entry or exit from the industry. Only then does he or she narrow his or her search to the best business in that area.</li>
+<li>The bottom-up investor starts with specific businesses, regardless of their industry/region.</li>
+</ul>
+<h2><span class="mw-headline" id="Procedures">Procedures</span> <span class="mw-editsection">[<a href="/w/index.php?title=Fundamental_analysis&amp;action=edit&amp;section=4" title="Edit section: Procedures">edit</a>]</span></h2>
+<p>The analysis of a business' health starts with financial statement analysis that includes <a href="/wiki/Financial_ratio" title="Financial ratio">ratios</a>. It looks at dividends paid, operating cash flow, new equity issues and capital financing. The earnings estimates and growth rate projections published widely by <a href="/wiki/Thomson_Reuters" title="Thomson Reuters">Thomson Reuters</a> and others can be considered either 'fundamental' (they are facts) or 'technical' (they are investor sentiment) based on your perception of their validity.</p>
+<p>The determined growth rates (of income and cash) and risk levels (to determine the <a href="/wiki/Discount_rate" title="Discount rate">discount rate</a>) are used in various valuation models. The foremost is the <a href="/wiki/Discounted_cash_flow" title="Discounted cash flow">discounted cash flow</a> model, which calculates the present value of the future</p>
+<ul>
+<li><a href="/wiki/Dividend" title="Dividend">dividends</a> received by the investor, along with the eventual sale price. (<a href="/wiki/Gordon_model" title="Gordon model" class="mw-redirect">Gordon model</a>)</li>
+<li>earnings of the company, or</li>
+<li><a href="/wiki/Cash_flow" title="Cash flow">cash flows</a> of the company.</li>
+</ul>
+<p>The amount of debt is also a major consideration in determining a company's health. It can be quickly assessed using the <a href="/wiki/Debt-to-equity_ratio" title="Debt-to-equity ratio">debt-to-equity ratio</a> and the <i>current ratio</i> (current assets/current liabilities).</p>
+<p>The simple model commonly used is the <a href="/wiki/P/E_ratio" title="P/E ratio" class="mw-redirect">Price/Earnings</a> ratio. Implicit in this model of a perpetual annuity (<a href="/wiki/Time_value_of_money" title="Time value of money">Time value of money</a>) is that the 'flip' of the P/E is the discount rate appropriate to the risk of the business. The multiple accepted is adjusted for expected growth (that is not built into the model).</p>
+<p>Growth estimates are incorporated into the <a href="/wiki/PEG_ratio" title="PEG ratio">PEG ratio</a>, but the math does not hold up to analysis.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (November 2010)">citation needed</span></a></i>]</sup> Its validity depends on the length of time you think the growth will continue. IGAR models can be used to impute expected changes in growth from current P/E and historical growth rates for the stocks relative to a comparison index.</p>
+<p>Computer modelling of stock prices has now replaced much of the subjective interpretation of fundamental data (along with technical data) in the industry. Since about year 2000, with the power of computers to crunch vast quantities of data, a new career has been invented. At some funds (called Quant Funds) the manager's decisions have been replaced by proprietary mathematical models.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Criticisms">Criticisms</span> <span class="mw-editsection">[<a href="/w/index.php?title=Fundamental_analysis&amp;action=edit&amp;section=5" title="Edit section: Criticisms">edit</a>]</span></h2>
+<ul>
+<li>Economists such as <a href="/wiki/Burton_Malkiel" title="Burton Malkiel">Burton Malkiel</a> suggest that neither fundamental analysis nor <a href="/wiki/Technical_analysis" title="Technical analysis">technical analysis</a> is useful in outperforming the markets<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup></li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span> <span class="mw-editsection">[<a href="/w/index.php?title=Fundamental_analysis&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a>]</span></h2>
+<ul>
+<li><a href="/wiki/List_of_finance_topics#Valuation" title="List of finance topics" class="mw-redirect">Lists of valuation topics</a></li>
+<li><a href="/wiki/Stock_picking" title="Stock picking" class="mw-redirect">Stock picking</a></li>
+<li><a href="/wiki/Security_analysis" title="Security analysis">Security analysis</a></li>
+<li><a href="/wiki/Stock_selection_criterion" title="Stock selection criterion">Stock selection criterion</a></li>
+<li><a href="/wiki/John_Burr_Williams#Theory" title="John Burr Williams">John Burr Williams: Theory</a></li>
+<li><a href="/wiki/Mosaic_theory_(investments)" title="Mosaic theory (investments)">Mosaic theory</a></li>
+<li><a href="/wiki/Chepakovich_valuation_model" title="Chepakovich valuation model">Chepakovich valuation model</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span> <span class="mw-editsection">[<a href="/w/index.php?title=Fundamental_analysis&amp;action=edit&amp;section=7" title="Edit section: References">edit</a>]</span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.informedtrades.com/13036-introduction-fundamental-analysis-us-economy.html#post13168">"An Introduction to Fundamental Analysis and the US Economy"</a>. InformedTrades.com. 2008-02-14<span class="reference-accessdate">. Retrieved 2009-07-27</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFundamental+analysis&amp;rft.btitle=An+Introduction+to+Fundamental+Analysis+and+the+US+Economy&amp;rft.date=2008-02-14&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.informedtrades.com%2F13036-introduction-fundamental-analysis-us-economy.html%23post13168&amp;rft.pub=InformedTrades.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation book">Graham, Benjamin; Dodd, David (December 10, 2004). <i>Security Analysis</i>. <a href="/wiki/McGraw-Hill" title="McGraw-Hill">McGraw-Hill</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-07-144820-8" title="Special:BookSources/978-0-07-144820-8">978-0-07-144820-8</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFundamental+analysis&amp;rft.au=Dodd%2C+David&amp;rft.aufirst=Benjamin&amp;rft.au=Graham%2C+Benjamin&amp;rft.aulast=Graham&amp;rft.btitle=Security+Analysis&amp;rft.date=December+10%2C+2004&amp;rft.genre=book&amp;rft.isbn=978-0-07-144820-8&amp;rft.pub=McGraw-Hill&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.investopedia.com/terms/p/pip.asp">"Quant Fund"</a>. Investopedia.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFundamental+analysis&amp;rft.btitle=Quant+Fund&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.investopedia.com%2Fterms%2Fp%2Fpip.asp&amp;rft.pub=Investopedia&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.investopedia.com/university/concepts/concepts5.asp">"Financial Concepts: Random Walk Theory"</a>. Investopedia.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFundamental+analysis&amp;rft.btitle=Financial+Concepts%3A+Random+Walk+Theory&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.investopedia.com%2Funiversity%2Fconcepts%2Fconcepts5.asp&amp;rft.pub=Investopedia&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span> <span class="mw-editsection">[<a href="/w/index.php?title=Fundamental_analysis&amp;action=edit&amp;section=8" title="Edit section: External links">edit</a>]</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://ocw.mit.edu/courses/sloan-school-of-management/15-414-financial-management-summer-2003/">MIT Financial-Management course notes</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;">
+<tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Financial_markets_navigation" title="Template:Financial markets navigation"><span title="View this template" style=";;background:none transparent;border:none;;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Financial_markets_navigation" title="Template talk:Financial markets navigation"><span title="Discuss this template" style=";;background:none transparent;border:none;;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Financial_markets_navigation&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:110%;"><a href="/wiki/Financial_market" title="Financial market">Financial markets</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Types of <a href="/wiki/Stock" title="Stock">stocks</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="/wiki/Common_stock" title="Common stock">Common stock</a></li>
+<li><a href="/wiki/Golden_share" title="Golden share">Golden share</a></li>
+<li><a href="/wiki/Preferred_stock" title="Preferred stock">Preferred stock</a></li>
+<li><a href="/wiki/Restricted_stock" title="Restricted stock">Restricted stock</a></li>
+<li><a href="/wiki/Tracking_stock" title="Tracking stock">Tracking stock</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Share_capital" title="Share capital">Share capital</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="/wiki/Authorised_capital" title="Authorised capital">Authorised capital</a></li>
+<li><a href="/wiki/Issued_shares" title="Issued shares">Issued shares</a></li>
+<li><a href="/wiki/Shares_outstanding" title="Shares outstanding">Shares outstanding</a></li>
+<li><a href="/wiki/Treasury_stock" title="Treasury stock">Treasury stock</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Participants</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="/wiki/Broker-dealer" title="Broker-dealer">Broker-dealer</a></li>
+<li><a href="/wiki/Floor_broker" title="Floor broker">Floor broker</a></li>
+<li><a href="/wiki/Floor_trader" title="Floor trader">Floor trader</a></li>
+<li><a href="/wiki/Investor" title="Investor">Investor</a></li>
+<li><a href="/wiki/Market_maker" title="Market maker">Market maker</a></li>
+<li><a href="/wiki/Proprietary_trader" title="Proprietary trader" class="mw-redirect">Proprietary trader</a></li>
+<li><a href="/wiki/Quantitative_analyst" title="Quantitative analyst">Quantitative analyst</a></li>
+<li><a href="/wiki/Stock_trader" title="Stock trader">Stock trader</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Stock_exchange" title="Stock exchange">Exchanges</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="/wiki/Electronic_communication_network" title="Electronic communication network">Electronic communication network</a></li>
+<li><a href="/wiki/List_of_stock_exchange_opening_times" title="List of stock exchange opening times">Stock exchange opening times</a></li>
+<li><a href="/wiki/Over-the-counter_(finance)" title="Over-the-counter (finance)">Over-the-counter</a></li>
+<li><a href="/wiki/List_of_stock_exchanges" title="List of stock exchanges">List of stock exchanges</a></li>
+<li><a href="/wiki/Multilateral_trading_facility" title="Multilateral trading facility">Multilateral trading facility</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Stock_valuation" title="Stock valuation">Stock valuation</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="/wiki/Alpha_(investment)" title="Alpha (investment)">Alpha</a></li>
+<li><a href="/wiki/Arbitrage_pricing_theory" title="Arbitrage pricing theory">Arbitrage pricing theory</a></li>
+<li><a href="/wiki/Beta_(finance)" title="Beta (finance)">Beta</a></li>
+<li><a href="/wiki/Book_value" title="Book value">Book value</a></li>
+<li><a href="/wiki/Capital_asset_pricing_model" title="Capital asset pricing model">Capital asset pricing model</a></li>
+<li><a href="/wiki/Dividend_yield" title="Dividend yield">Dividend yield</a></li>
+<li><a href="/wiki/Earnings_per_share" title="Earnings per share">Earnings per share</a></li>
+<li><a href="/wiki/Earnings_yield" title="Earnings yield">Earnings yield</a></li>
+<li><a href="/wiki/Dividend_discount_model" title="Dividend discount model">Dividend discount model</a></li>
+<li><a href="/wiki/Security_characteristic_line" title="Security characteristic line">Security characteristic line</a></li>
+<li><a href="/wiki/Security_market_line" title="Security market line">Security market line</a></li>
+<li><a href="/wiki/T-Model" title="T-Model">T-Model</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Trading theories<br />
+and <a href="/wiki/Trading_strategy" title="Trading strategy">strategies</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="/wiki/Algorithmic_trading" title="Algorithmic trading">Algorithmic trading</a></li>
+<li><a href="/wiki/Buy_and_hold" title="Buy and hold">Buy and hold</a></li>
+<li><a href="/wiki/Concentrated_stock" title="Concentrated stock">Concentrated stock</a></li>
+<li><a href="/wiki/Contrarian_investing" title="Contrarian investing">Contrarian investing</a></li>
+<li><a href="/wiki/Day_trading" title="Day trading">Day trading</a></li>
+<li><a href="/wiki/Efficient-market_hypothesis" title="Efficient-market hypothesis">Efficient-market hypothesis</a></li>
+<li><strong class="selflink">Fundamental analysis</strong></li>
+<li><a href="/wiki/Growth_stock" title="Growth stock">Growth stock</a></li>
+<li><a href="/wiki/Market_timing" title="Market timing">Market timing</a></li>
+<li><a href="/wiki/Modern_portfolio_theory" title="Modern portfolio theory">Modern portfolio theory</a></li>
+<li><a href="/wiki/Momentum_investing" title="Momentum investing">Momentum investing</a></li>
+<li><a href="/wiki/Mosaic_theory_(investments)" title="Mosaic theory (investments)">Mosaic theory</a></li>
+<li><a href="/wiki/Pairs_trade" title="Pairs trade">Pairs trade</a></li>
+<li><a href="/wiki/Post-modern_portfolio_theory" title="Post-modern portfolio theory">Post-modern portfolio theory</a></li>
+<li><a href="/wiki/Random_walk_hypothesis" title="Random walk hypothesis">Random walk hypothesis</a></li>
+<li><a href="/wiki/Style_investing" title="Style investing">Style investing</a></li>
+<li><a href="/wiki/Swing_trading" title="Swing trading">Swing trading</a></li>
+<li><a href="/wiki/Technical_analysis" title="Technical analysis">Technical analysis</a></li>
+<li><a href="/wiki/Trend_following" title="Trend following">Trend following</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related terms</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;">
+<div style="padding:0em 0.25em;">
+<ul>
+<li><a href="/wiki/Block_trade" title="Block trade">Block trade</a></li>
+<li><a href="/wiki/Cross_listing" title="Cross listing">Cross listing</a></li>
+<li><a href="/wiki/Dark_liquidity" title="Dark liquidity">Dark liquidity</a></li>
+<li><a href="/wiki/Dividend" title="Dividend">Dividend</a></li>
+<li><a href="/wiki/Dual-listed_company" title="Dual-listed company">Dual-listed company</a></li>
+<li><a href="/wiki/DuPont_analysis" title="DuPont analysis">DuPont analysis</a></li>
+<li><a href="/wiki/Flight-to-quality" title="Flight-to-quality">Flight-to-quality</a></li>
+<li><a href="/wiki/Haircut_(finance)" title="Haircut (finance)">Haircut</a></li>
+<li><a href="/wiki/Initial_public_offering" title="Initial public offering">Initial public offering</a></li>
+<li><a href="/wiki/Margin_(finance)" title="Margin (finance)">Margin</a></li>
+<li><a href="/wiki/Market_anomaly" title="Market anomaly">Market anomaly</a></li>
+<li><a href="/wiki/Market_capitalization" title="Market capitalization">Market capitalization</a></li>
+<li><a href="/wiki/Market_depth" title="Market depth">Market depth</a></li>
+<li><a href="/wiki/Market_manipulation" title="Market manipulation">Market manipulation</a></li>
+<li><a href="/wiki/Market_trend" title="Market trend">Market trend</a></li>
+<li><a href="/wiki/Mean_reversion_(finance)" title="Mean reversion (finance)">Mean reversion</a></li>
+<li><a href="/wiki/Momentum_(finance)" title="Momentum (finance)">Momentum</a></li>
+<li><a href="/wiki/Open_outcry" title="Open outcry">Open outcry</a></li>
+<li><a href="/wiki/Public_float" title="Public float">Public float</a></li>
+<li><a href="/wiki/Public_offering" title="Public offering">Public offering</a></li>
+<li><a href="/wiki/Rally_(stock_market)" title="Rally (stock market)">Rally</a></li>
+<li><a href="/wiki/Reverse_stock_split" title="Reverse stock split">Reverse stock split</a></li>
+<li><a href="/wiki/Returns-based_style_analysis" title="Returns-based style analysis">Returns-based style analysis</a></li>
+<li><a href="/wiki/Short_selling" title="Short selling" class="mw-redirect">Short selling</a></li>
+<li><a href="/wiki/Slippage_(finance)" title="Slippage (finance)">Slippage</a></li>
+<li><a href="/wiki/Speculation" title="Speculation">Speculation</a></li>
+<li><a href="/wiki/Stock_dilution" title="Stock dilution">Stock dilution</a></li>
+<li><a href="/wiki/Stock_split" title="Stock split">Stock split</a></li>
+<li><a href="/wiki/Trade_(financial_instrument)" title="Trade (financial instrument)">Trade</a></li>
+<li><a href="/wiki/Uptick_rule" title="Uptick rule">Uptick rule</a></li>
+<li><a href="/wiki/Volatility_(finance)" title="Volatility (finance)">Volatility</a></li>
+<li><a href="/wiki/Voting_interest" title="Voting interest">Voting interest</a></li>
+<li><a href="/wiki/Stock_market_index" title="Stock market index">Stock market index</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 1245/1000000
+Preprocessor generated node count: 10204/1500000
+Post‐expand include size: 34513/2048000 bytes
+Template argument size: 4192/2048000 bytes
+Highest expansion depth: 21/40
+Expensive parser function count: 3/500
+Lua time usage: 0.027s
+Lua memory usage: 1.01 MB
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:11684-0!*!0!!en!4!* and timestamp 20130516115526 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://en.wikipedia.org/w/index.php?title=Fundamental_analysis&amp;oldid=554662329">http://en.wikipedia.org/w/index.php?title=Fundamental_analysis&amp;oldid=554662329</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Categories" title="Help:Categories">Categories</a>: <ul><li><a href="/wiki/Category:Fundamental_analysis" title="Category:Fundamental analysis">Fundamental analysis</a></li><li><a href="/wiki/Category:Commodities_market" title="Category:Commodities market">Commodities market</a></li><li><a href="/wiki/Category:Derivatives_(finance)" title="Category:Derivatives (finance)">Derivatives (finance)</a></li><li><a href="/wiki/Category:Foreign_exchange_market" title="Category:Foreign exchange market">Foreign exchange market</a></li><li><a href="/wiki/Category:Stock_market" title="Category:Stock market">Stock market</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_November_2010" title="Category:Articles with unsourced statements from November 2010">Articles with unsourced statements from November 2010</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<!-- header -->
+			<div id="mw-head">
+				
+<!-- 0 -->
+<div id="p-personal" role="navigation" class="">
+	<h3>Personal tools</h3>
+	<ul>
+<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Fundamental+analysis&amp;type=signup">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Fundamental+analysis" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in</a></li>	</ul>
+</div>
+
+<!-- /0 -->
+				<div id="left-navigation">
+					
+<!-- 0 -->
+<div id="p-namespaces" role="navigation" class="vectorTabs">
+	<h3>Namespaces</h3>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Fundamental_analysis"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+					<li  id="ca-talk"><span><a href="/wiki/Talk:Fundamental_analysis"  title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3><span>Variants</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+				</div>
+				<div id="right-navigation">
+					
+<!-- 0 -->
+<div id="p-views" role="navigation" class="vectorTabs">
+	<h3>Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/wiki/Fundamental_analysis" >Read</a></span></li>
+					<li id="ca-edit"><span><a href="/w/index.php?title=Fundamental_analysis&amp;action=edit"  title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Fundamental_analysis&amp;action=history"  title="Past versions of this page [h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet">
+	<h3><span>Actions</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="/w/index.php" id="searchform">
+				<div id="simpleSearch">
+						<input name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" />						<button type="submit" name="button" title="Search Wikipedia for this text" id="searchButton"><img src="//bits.wikimedia.org/static-1.22wmf3/skins/vector/images/search-ltr.png?303-4" alt="Search" width="12" height="13" /></button>								<input type='hidden' name="title" value="Special:Search"/>
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+				</div>
+			</div>
+			<!-- /header -->
+			<!-- panel -->
+			<div id="mw-panel">
+				<!-- logo -->
+					<div id="p-logo" role="banner"><a style="background-image: url(//upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" role="navigation" id='p-navigation'>
+	<h3>Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+			<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
+			<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+			<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+			<li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" role="navigation" id='p-interaction'>
+	<h3>Interaction</h3>
+	<div class="body">
+		<ul>
+			<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+			<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+			<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			<li id="n-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" role="navigation" id='p-tb'>
+	<h3>Toolbox</h3>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Fundamental_analysis" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Fundamental_analysis" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+			<li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li>
+			<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+			<li id="t-permalink"><a href="/w/index.php?title=Fundamental_analysis&amp;oldid=554662329" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="/w/index.php?title=Fundamental_analysis&amp;action=info">Page information</a></li>
+<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Fundamental_analysis&amp;id=554662329" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" role="navigation" id='p-coll-print_export'>
+	<h3>Print/export</h3>
+	<div class="body">
+		<ul>
+			<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Fundamental+analysis">Create a book</a></li>
+			<li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Fundamental+analysis&amp;oldid=554662329&amp;writer=rl">Download as PDF</a></li>
+			<li id="t-print"><a href="/w/index.php?title=Fundamental_analysis&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+<div class="portal" role="navigation" id='p-lang'>
+	<h3>Languages</h3>
+	<div class="body">
+		<ul>
+			<li class="interwiki-ar"><a href="//ar.wikipedia.org/wiki/%D8%AA%D8%AD%D9%84%D9%8A%D9%84_%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A" title="تحليل أساسي" lang="ar" hreflang="ar">العربية</a></li>
+			<li class="interwiki-ca"><a href="//ca.wikipedia.org/wiki/An%C3%A0lisi_fonamental" title="Anàlisi fonamental" lang="ca" hreflang="ca">Català</a></li>
+			<li class="interwiki-ceb"><a href="//ceb.wikipedia.org/wiki/Pundamental_nga_analisis" title="Pundamental nga analisis" lang="ceb" hreflang="ceb">Cebuano</a></li>
+			<li class="interwiki-cs"><a href="//cs.wikipedia.org/wiki/Fundament%C3%A1ln%C3%AD_anal%C3%BDza" title="Fundamentální analýza" lang="cs" hreflang="cs">Česky</a></li>
+			<li class="interwiki-da"><a href="//da.wikipedia.org/wiki/Fundamental_analyse" title="Fundamental analyse" lang="da" hreflang="da">Dansk</a></li>
+			<li class="interwiki-de"><a href="//de.wikipedia.org/wiki/Fundamentalanalyse" title="Fundamentalanalyse" lang="de" hreflang="de">Deutsch</a></li>
+			<li class="interwiki-el"><a href="//el.wikipedia.org/wiki/%CE%98%CE%B5%CE%BC%CE%B5%CE%BB%CE%B9%CF%8E%CE%B4%CE%B7%CF%82_%CE%91%CE%BD%CE%AC%CE%BB%CF%85%CF%83%CE%B7" title="Θεμελιώδης Ανάλυση" lang="el" hreflang="el">Ελληνικά</a></li>
+			<li class="interwiki-es"><a href="//es.wikipedia.org/wiki/An%C3%A1lisis_fundamental" title="Análisis fundamental" lang="es" hreflang="es">Español</a></li>
+			<li class="interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D8%AA%D8%AD%D9%84%DB%8C%D9%84_%D8%A8%D9%86%DB%8C%D8%A7%D8%AF%DB%8C%D9%86_%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1_%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87" title="تحلیل بنیادین بازار سرمایه" lang="fa" hreflang="fa">فارسی</a></li>
+			<li class="interwiki-hr"><a href="//hr.wikipedia.org/wiki/Fundamentalna_analiza" title="Fundamentalna analiza" lang="hr" hreflang="hr">Hrvatski</a></li>
+			<li class="interwiki-id"><a href="//id.wikipedia.org/wiki/Analisis_fundamental" title="Analisis fundamental" lang="id" hreflang="id">Bahasa Indonesia</a></li>
+			<li class="interwiki-it"><a href="//it.wikipedia.org/wiki/Analisi_fondamentale" title="Analisi fondamentale" lang="it" hreflang="it">Italiano</a></li>
+			<li class="interwiki-lt"><a href="//lt.wikipedia.org/wiki/Fundamentalioji_analiz%C4%97" title="Fundamentalioji analizė" lang="lt" hreflang="lt">Lietuvių</a></li>
+			<li class="interwiki-ms"><a href="//ms.wikipedia.org/wiki/Analisis_fundamental" title="Analisis fundamental" lang="ms" hreflang="ms">Bahasa Melayu</a></li>
+			<li class="interwiki-nl"><a href="//nl.wikipedia.org/wiki/Fundamentele_analyse" title="Fundamentele analyse" lang="nl" hreflang="nl">Nederlands</a></li>
+			<li class="interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%83%B3%E3%83%80%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E5%88%86%E6%9E%90" title="ファンダメンタル分析" lang="ja" hreflang="ja">日本語</a></li>
+			<li class="interwiki-no"><a href="//no.wikipedia.org/wiki/Fundamental_aksjeanalyse" title="Fundamental aksjeanalyse" lang="no" hreflang="no">Norsk bokmål</a></li>
+			<li class="interwiki-pl"><a href="//pl.wikipedia.org/wiki/Analiza_fundamentalna" title="Analiza fundamentalna" lang="pl" hreflang="pl">Polski</a></li>
+			<li class="interwiki-pt"><a href="//pt.wikipedia.org/wiki/An%C3%A1lise_fundamentalista" title="Análise fundamentalista" lang="pt" hreflang="pt">Português</a></li>
+			<li class="interwiki-ro"><a href="//ro.wikipedia.org/wiki/Analiza_fundamental%C4%83" title="Analiza fundamentală" lang="ro" hreflang="ro">Română</a></li>
+			<li class="interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%A4%D1%83%D0%BD%D0%B4%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7" title="Фундаментальный анализ" lang="ru" hreflang="ru">Русский</a></li>
+			<li class="interwiki-sk"><a href="//sk.wikipedia.org/wiki/Fundament%C3%A1lna_akciov%C3%A1_anal%C3%BDza" title="Fundamentálna akciová analýza" lang="sk" hreflang="sk">Slovenčina</a></li>
+			<li class="interwiki-sv"><a href="//sv.wikipedia.org/wiki/Fundamental_analys" title="Fundamental analys" lang="sv" hreflang="sv">Svenska</a></li>
+			<li class="interwiki-ta"><a href="//ta.wikipedia.org/wiki/%E0%AE%85%E0%AE%9F%E0%AE%BF%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%9F%E0%AF%88%E0%AE%AA%E0%AF%8D_%E0%AE%AA%E0%AE%95%E0%AF%81%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%BE%E0%AE%AF%E0%AF%8D%E0%AE%B5%E0%AF%81" title="அடிப்படைப் பகுப்பாய்வு" lang="ta" hreflang="ta">தமிழ்</a></li>
+			<li class="interwiki-uk"><a href="//uk.wikipedia.org/wiki/%D0%A4%D1%83%D0%BD%D0%B4%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%B0%D0%BD%D0%B0%D0%BB%D1%96%D0%B7" title="Фундаментальний аналіз" lang="uk" hreflang="uk">Українська</a></li>
+			<li class="interwiki-vi"><a href="//vi.wikipedia.org/wiki/Ph%C3%A2n_t%C3%ADch_c%C6%A1_b%E1%BA%A3n" title="Phân tích cơ bản" lang="vi" hreflang="vi">Tiếng Việt</a></li>
+			<li class="interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E5%9F%BA%E6%9C%AC%E5%88%86%E6%9E%90" title="基本分析" lang="zh" hreflang="zh">中文</a></li>
+			<li class="wbc-editpage"><a href="//www.wikidata.org/wiki/Q467042#sitelinks" title="Edit interlanguage links">Edit links</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+			<!-- /panel -->
+		</div>
+		<!-- footer -->
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 11 May 2013 at 23:35.<br /></li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a> <br/>
+Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-mobileview"><a href="http://en.m.wikipedia.org/wiki/Fundamental_analysis" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="//wikimediafoundation.org/"><img src="//bits.wikimedia.org/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="//bits.wikimedia.org/static-1.22wmf3/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<script>jQuery.ready();</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mobile.desktop","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","mw.MwEmbedSupport.style","ext.vector.collapsibleNav","ext.vector.collapsibleTabs","ext.articleFeedbackv5.startup","ext.markAsHelpful","ext.gettingstarted.openTask","ext.navigationTiming","mw.PopUpMediaTransform","skins.vector.js"],null,true);
+}</script>
+<script src="/w/index.php?title=MediaWiki:Gadget-ReferenceTooltips.js&amp;action=raw&amp;ctype=text/javascript&amp;508635914"></script>
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<!-- Served by mw1037 in 0.955 secs. -->
+	</body>
+</html>
