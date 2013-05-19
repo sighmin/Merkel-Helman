@@ -1,7 +1,6 @@
 package merkle.hellman;
 
 import java.math.BigInteger;
-import java.security.SecureRandom;
 
 /**
  * @author Simon van Dyk & Deon Taljaard
@@ -91,13 +90,7 @@ public class U {
         chars = temp.toCharArray();
         return chars;
     }
-
-    public static int getModInverse(int multiplier, int prime) {
-        BigInteger inverse = new BigInteger(String.valueOf(multiplier));
-        inverse = inverse.modInverse(new BigInteger(String.valueOf(prime)));
-        return inverse.intValue();
-    }
-
+    
     public static byte toByte(String str) {
         String temp = str;
         U.p("Before: "+str);
@@ -113,84 +106,90 @@ public class U {
         return b;
     }
 
-    public static long[] createSuperincreasing() {
-        int length = 16;
-        long[] seq = new long[length];
-        SecureRandom sr = new SecureRandom();
+//    public static int getModInverse(int multiplier, int prime) {
+//        BigInteger inverse = new BigInteger(String.valueOf(multiplier));
+//        inverse = inverse.modInverse(new BigInteger(String.valueOf(prime)));
+//        return inverse.intValue();
+//    }    
 
-        for (int i = 0; i < length; ++i) {
-            long temp = 1;
-            for (int j = 0; j < i; ++j) {
-                temp += seq[j];
-            }
-            seq[i] = temp + sr.nextInt(3);
-        }
-        return seq;
-    }
+//    public static long[] createSuperincreasing() {
+//        int length = 16;
+//        long[] seq = new long[length];
+//        SecureRandom sr = new SecureRandom();
+//
+//        for (int i = 0; i < length; ++i) {
+//            long temp = 1;
+//            for (int j = 0; j < i; ++j) {
+//                temp += seq[j];
+//            }
+//            seq[i] = temp + sr.nextInt(3);
+//        }
+//        return seq;
+//    }
     
-    public static boolean isSuperIncreasing(long[] seq) {
-        int sum = 0;
-        boolean test = true;
-        for (int i = 0; i < seq.length; ++i) {
-            if (seq[i] <= sum){
-                test = false;
-                break;
-            }
-            sum += seq[i];
-        }
-        return test;
-    }
+//    public static boolean isSuperIncreasing(long[] seq) {
+//        int sum = 0;
+//        boolean test = true;
+//        for (int i = 0; i < seq.length; ++i) {
+//            if (seq[i] <= sum){
+//                test = false;
+//                break;
+//            }
+//            sum += seq[i];
+//        }
+//        return test;
+//    }
     
-    public static int findNextPrimeFrom(long sum) {
-        long prime = 0;
-        for (long i = sum; i < sum*3; ++i){
-            if (isPrime(i)){
-                prime = i;
-                break;
-            }
-        }
-        return (int)prime;
-    }
+//    public static int findNextPrimeFrom(long sum) {
+//        long prime = 0;
+//        for (long i = sum; i < sum*3; ++i){
+//            if (isPrime(i)){
+//                prime = i;
+//                break;
+//            }
+//        }
+//        return (int)prime;
+//    }
     
-    public static boolean isPrime(long num){
-        if (num == 2) {
-          return true;
-        }
-        for (int i = 2; i <= (int)Math.sqrt(num) + 1; ++i){
-          if (num % i == 0){
-            return false;
-          }
-        }
-        return true;
-    }
+//    public static boolean isPrime(long num){
+//        if (num == 2) {
+//          return true;
+//        }
+//        for (int i = 2; i <= (int)Math.sqrt(num) + 1; ++i){
+//          if (num % i == 0){
+//            return false;
+//          }
+//        }
+//        return true;
+//    }
     
-    public static int getRandomCoPrime(int modulo) {
-        SecureRandom sr = new SecureRandom();
-        int random = sr.nextInt(modulo/2);
-        int coprime = random + 1;
-        return coprime;
-    }
+//    public static int getRandomCoPrime(int modulo) {
+//        SecureRandom sr = new SecureRandom();
+//        int random = sr.nextInt(modulo/2);
+//        int coprime = random + 1;
+//        return coprime;
+//    }
 
-    public static long calculateSumOf(long[] key) {
-        int val = 0;
-        for (int i = 0; i < key.length; ++i) {
-            val += key[i];
-        }
-        return val;
-    }
+//    public static long calculateSumOf(long[] key) {
+//        int val = 0;
+//        for (int i = 0; i < key.length; ++i) {
+//            val += key[i];
+//        }
+//        return val;
+//    }
     
-    public static BigInteger[] createBigIntegerSuperincreasing() {
-        int length = 128;
-        BigInteger[] seq = new BigInteger[length];
-        
-        for (int i = 0; i < length; ++i){
-            BigInteger temp = new BigInteger("1");
-            for (int j = 0; j < i; ++j){
-                //temp += seq[j];
-                temp = temp.add(seq[j]);
-            }
-            seq[i] = temp;
-        }
-        return seq;
-    }
+//    public static BigInteger[] createBigIntegerSuperincreasing() {
+//        int length = 128;
+//        BigInteger[] seq = new BigInteger[length];
+//        
+//        for (int i = 0; i < length; ++i){
+//            BigInteger temp = new BigInteger("1");
+//            for (int j = 0; j < i; ++j){
+//                //temp += seq[j];
+//                temp = temp.add(seq[j]);
+//            }
+//            seq[i] = temp;
+//        }
+//        return seq;
+//    }
 }
