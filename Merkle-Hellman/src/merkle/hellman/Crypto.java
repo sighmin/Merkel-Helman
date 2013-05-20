@@ -26,9 +26,8 @@ public class Crypto {
     }
 
     // encrypt
-    public Crypto(String keyString) {
+    public Crypto(String[] key) {
         this.math = new MKMath();
-        String[] key = keyString.split(",");
         for (int i = 0; i < keylength; ++i) {
             this.publicKey[i] = Integer.parseInt(key[i]);
         }
@@ -57,7 +56,7 @@ public class Crypto {
         char[] chardata = U.toCharArr(block);
         long encryptedNum = 0;
 
-        //loop through chardata and multiply each bit by its corresponding number in B[]
+        // loop through chardata and multiply each bit by its corresponding number in publicKey[]
         for (int i = 0; i < chardata.length; ++i) {
             if (chardata[i] == '1') {
                 encryptedNum += publicKey[i];
@@ -77,7 +76,6 @@ public class Crypto {
             byte[] temp = new byte[blocksize];
             temp = decryptBlock(encrypted[i]);
             for (int j = 0; j < blocksize; ++j) {
-                long v = (i * blocksize) + j;
                 decrypted[(i * blocksize) + j] = temp[j];
             }
         }
@@ -97,7 +95,7 @@ public class Crypto {
         long decryptedNum = block * modularInverse % modulo;
         byte[] decryptedBlock = new byte[blocksize];
 
-        // build string representation of decrypted block
+        // build binary string representation of decrypted block
         long temp = decryptedNum;
         for (int i = privateKey.length - 1; i >= 0; --i) {
             if (temp - privateKey[i] >= 0) {
@@ -126,19 +124,16 @@ public class Crypto {
         U.p(privateKey);
 
         // find modulo
-        long sum = 0;
-        for (long i : privateKey) {
-            sum += i;
-        }
+        long sum = math.calculateSumOf(this.privateKey);
         this.modulo = this.math.findNextPrimeFrom(sum);
         this.multiplier = this.math.getRandomCoPrime(this.modulo);
         U.p("mod: " + modulo + " mul: " + multiplier + "\n" + Integer.MAX_VALUE);
 
         for (int i = 0; i < keylength; ++i) {
             long temp = privateKey[i] * multiplier;
-            if (temp >= Integer.MAX_VALUE) {
-                U.p("Problem: " + temp);
-            }
+//            if (temp >= Integer.MAX_VALUE) { --> not necessary because we're using long
+//                U.p("Problem: " + temp);
+//            }
             publicKey[i] = temp % modulo;
         }
 
@@ -159,6 +154,7 @@ public class Crypto {
         } catch (IOException e) {
             System.exit(2);
         }
+
         // write public key to file
         try {
             BufferedWriter pf = new BufferedWriter(new FileWriter("public.key"));
@@ -175,7 +171,7 @@ public class Crypto {
     }
 
     /**
-     * Private class for mathematical cryptographic functions
+     * @clas MKMath private class for mathematical cryptographic functions for the program
      */
     private class MKMath {
 
@@ -215,9 +211,9 @@ public class Crypto {
             return val;
         }
 
-        public int getModInverse(int multiplier, int prime) {
+        public int getModInverse(int multiplier, int modulo) {
             BigInteger inverse = new BigInteger(String.valueOf(multiplier));
-            inverse = inverse.modInverse(new BigInteger(String.valueOf(prime)));
+            inverse = inverse.modInverse(new BigInteger(String.valueOf(modulo)));
             return inverse.intValue();
         }
 
@@ -231,14 +227,7 @@ public class Crypto {
             }
             return (int) prime;
         }
-
-        public int getRandomCoPrime(int modulo) {
-            SecureRandom sr = new SecureRandom();
-            int random = sr.nextInt(modulo / 2);
-            int coprime = random + 1;
-            return coprime;
-        }
-
+        
         public boolean isPrime(long num) {
             if (num == 2) {
                 return true;
@@ -251,6 +240,13 @@ public class Crypto {
             return true;
         }
 
+        public int getRandomCoPrime(int modulo) {
+            SecureRandom sr = new SecureRandom();
+            int random = sr.nextInt(modulo / 2);
+            int coprime = random + 1;
+            return coprime;
+        }
+
         public BigInteger[] createBigIntegerSuperincreasing() {
             int length = 128;
             BigInteger[] seq = new BigInteger[length];
@@ -258,12 +254,11 @@ public class Crypto {
             for (int i = 0; i < length; ++i) {
                 BigInteger temp = new BigInteger("1");
                 for (int j = 0; j < i; ++j) {
-                    //temp += seq[j];
                     temp = temp.add(seq[j]);
                 }
                 seq[i] = temp;
             }
             return seq;
         }
-    }
+    } // end class MKMath
 }

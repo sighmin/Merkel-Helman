@@ -48,13 +48,13 @@ public class MerkleHellman {
         System.out.println(
                 "Merkel-Hellman Usage:\n"
                 + "help\n"
-                + "  java -jar Merkle-Hellman.jar help\n"
+                + "  java -jar Merkle-Hellman.jar help/--help/-h\n"
                 + "keygen\n"
-                + "  java -jar Merkle-Hellman.jar keygen\n"
+                + "  java -jar Merkle-Hellman.jar keygen/--keygen/-k\n"
                 + "encrypt\n"
-                + "  java -jar Merkle-Hellman.jar encrypt public.key < plain > encrypted\n"
+                + "  java -jar Merkle-Hellman.jar encrypt/--encrypt/-e public.key < plain > encrypted\n"
                 + "decrypt\n"
-                + "  java -jar Merkle-Hellman.jar decrypt private.key < encrypted > decrypted");
+                + "  java -jar Merkle-Hellman.jar decrypt/--decrypt/-d private.key < encrypted > decrypted");
     }
 
     public static void encrypt(String[] args) {
@@ -72,7 +72,8 @@ public class MerkleHellman {
         }
         
         // Init crypto object with key
-        Crypto crypto = new Crypto(keyString);
+        String[] key = keyString.split(",");
+        Crypto crypto = new Crypto(key);
         int blocksize = 2;
         int bytesRead = 0;
         byte[] block = new byte[blocksize];
@@ -116,7 +117,9 @@ public class MerkleHellman {
         // Init crypto class with private key (modulo, multiplier, super increasing sequence)
         Scanner scan = null;
         Crypto crypto = new Crypto(keydata[0], keydata[1], key);
-        try {
+        
+        // read in input from standard in containing the cipher text
+        try {            
             scan = new Scanner(System.in);
             String input;
             while (scan.hasNext()) {

@@ -4,7 +4,8 @@ import java.math.BigInteger;
 
 /**
  * @author Simon van Dyk & Deon Taljaard
- * @date   2013-05-21
+ * @date 2013-05-21
+ * @class Utility class for the program
  */
 public class U {
 
@@ -21,7 +22,7 @@ public class U {
             System.out.println(s);
         }
     }
-    
+
     static public void p(long s) {
         if (!silent) {
             System.out.println(s);
@@ -75,12 +76,12 @@ public class U {
         String binaryValue = "";
 
         for (byte b : data) {
-            //byte value is signed so AND with 0xff to get unsigned
+            // byte value is signed so AND with 0xff to get unsigned
             int uns = b & 0xFF;
             binaryValue = Integer.toBinaryString(uns);
 
+            // if binaryValue is not 8 bits, pad MSB with 0's
             int difference = 8 - binaryValue.length();
-
             for (int i = 0; i < difference; ++i) {
                 binaryValue = "0" + binaryValue;
             }
@@ -90,28 +91,29 @@ public class U {
         chars = temp.toCharArray();
         return chars;
     }
-    
+
     public static byte toByte(String str) {
         String temp = str;
-        U.p("Before: "+str);
+        U.p("Before: " + str);
 
+        // if binaryValue is not 8 bits, pad MSB with 0's
         int difference = 8 - temp.length();
-
         for (int i = 0; i < difference; ++i) {
             temp = "0" + temp;
         }
+        
         byte b = (byte) Integer.parseInt(temp, 2);
-        U.p("After: "+b);
+        
+        U.p("After: " + b);
         U.p(Integer.toBinaryString(b));
+        
         return b;
     }
-
 //    public static int getModInverse(int multiplier, int prime) {
 //        BigInteger inverse = new BigInteger(String.valueOf(multiplier));
 //        inverse = inverse.modInverse(new BigInteger(String.valueOf(prime)));
 //        return inverse.intValue();
 //    }    
-
 //    public static long[] createSuperincreasing() {
 //        int length = 16;
 //        long[] seq = new long[length];
@@ -126,7 +128,6 @@ public class U {
 //        }
 //        return seq;
 //    }
-    
 //    public static boolean isSuperIncreasing(long[] seq) {
 //        int sum = 0;
 //        boolean test = true;
@@ -139,7 +140,6 @@ public class U {
 //        }
 //        return test;
 //    }
-    
 //    public static int findNextPrimeFrom(long sum) {
 //        long prime = 0;
 //        for (long i = sum; i < sum*3; ++i){
@@ -150,7 +150,6 @@ public class U {
 //        }
 //        return (int)prime;
 //    }
-    
 //    public static boolean isPrime(long num){
 //        if (num == 2) {
 //          return true;
@@ -162,14 +161,12 @@ public class U {
 //        }
 //        return true;
 //    }
-    
 //    public static int getRandomCoPrime(int modulo) {
 //        SecureRandom sr = new SecureRandom();
 //        int random = sr.nextInt(modulo/2);
 //        int coprime = random + 1;
 //        return coprime;
 //    }
-
 //    public static long calculateSumOf(long[] key) {
 //        int val = 0;
 //        for (int i = 0; i < key.length; ++i) {
@@ -177,7 +174,6 @@ public class U {
 //        }
 //        return val;
 //    }
-    
 //    public static BigInteger[] createBigIntegerSuperincreasing() {
 //        int length = 128;
 //        BigInteger[] seq = new BigInteger[length];
