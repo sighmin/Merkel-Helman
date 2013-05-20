@@ -2,32 +2,32 @@ package merkle.hellman;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.math.BigInteger;
 import java.security.SecureRandom;
+import merkle.hellman.exceptions.MathViolationException;
+import merkle.hellman.exceptions.ViolatedPreconditionException;
 
 /**
  * @author Simon van Dyk & Deon Taljaard
- * @date 2013-05-21
+ * @date   2013-05-21
+ * @class  Cryptographic implementation
  */
 public class Crypto {
 
-    private MKMath math;
+    private MKMath math = new MKMath();
     private final int keylength = 16;
+    private final int blocksize = keylength / 8;
     private long[] privateKey = new long[keylength];
     private long[] publicKey = new long[keylength];
     private int modulo;
     private int multiplier;
     private int modularInverse;
-    private int blocksize = keylength / 8;
 
-    public Crypto() {
-        this.math = new MKMath();
-    }
+    // keygen
+    public Crypto() { }
 
     // encrypt
     public Crypto(String[] key) {
-        this.math = new MKMath();
         for (int i = 0; i < keylength; ++i) {
             this.publicKey[i] = Integer.parseInt(key[i]);
         }
@@ -36,20 +36,22 @@ public class Crypto {
 
     // decrypt
     public Crypto(String modulostring, String multiplierString, String[] keystring) {
-        this.math = new MKMath();
         this.modulo = Integer.parseInt(modulostring);
         this.multiplier = Integer.parseInt(multiplierString);
         for (int i = 0; i < keylength; ++i) {
             this.privateKey[i] = Integer.parseInt(keystring[i]);
         }
-        this.modularInverse = this.math.getModInverse(this.multiplier, this.modulo);
+        this.modularInverse = this.math.getMultiplicativeModularInverse(this.multiplier, this.modulo);
         U.p(this.modulo);
         U.p(this.multiplier);
         U.p(this.privateKey);
         U.p(this.math.calculateSumOf(privateKey));
     }
 
-    public long encryptBlock(byte[] block) {
+    public long encryptBlock(byte[] block) throws Exception {
+        if (block.length == 0)
+            throw new ViolatedPreconditionException("Error: received empty block to encrypt.");
+        
         U.p("= encrypt block");
         U.p(U.toCharArr(block));
 
@@ -67,14 +69,16 @@ public class Crypto {
         return encryptedNum;
     }
 
-    public byte[] decrypt(long[] encrypted) {
+    public byte[] decrypt(long[] encrypted) throws Exception {
+        if (encrypted.length == 0)
+            throw new ViolatedPreconditionException("Error: received empty array to decrypt.");
+        
         U.p("\nIn decrypt()\n===");
         byte[] decrypted = new byte[encrypted.length * blocksize];
 
-        // multiply encrypted number by modular inverse and mod by q      
+        // multiply encrypted number by modular inverse and mod by modulo
         for (int i = 0; i < encrypted.length; ++i) {
-            byte[] temp = new byte[blocksize];
-            temp = decryptBlock(encrypted[i]);
+            final byte[] temp = decryptBlock(encrypted[i]);
             for (int j = 0; j < blocksize; ++j) {
                 decrypted[(i * blocksize) + j] = temp[j];
             }
@@ -87,19 +91,19 @@ public class Crypto {
         return decrypted;
     }
 
-    private byte[] decryptBlock(long block) {
+    private byte[] decryptBlock(long block) throws Exception {
         U.p("= decrypt block");
         U.p(block);
 
         String res = "";
-        long decryptedNum = block * modularInverse % modulo;
+        final long decryptedNum = block * modularInverse % modulo;
         byte[] decryptedBlock = new byte[blocksize];
 
         // build binary string representation of decrypted block
-        long temp = decryptedNum;
+        long tempDecryptedNum = decryptedNum;
         for (int i = privateKey.length - 1; i >= 0; --i) {
-            if (temp - privateKey[i] >= 0) {
-                temp = temp - privateKey[i];
+            if (tempDecryptedNum - privateKey[i] >= 0) {
+                tempDecryptedNum = tempDecryptedNum - privateKey[i];
                 res = "1" + res;
             } else {
                 res = "0" + res;
@@ -108,7 +112,7 @@ public class Crypto {
 
         // for each block in the binary String, convert into a byte
         for (int i = 0, j = 0; i < res.length(); i += 8, ++j) {
-            String tempString = res.substring(i, i + 8);
+            final String tempString = res.substring(i, i + 8);
             decryptedBlock[j] = U.toByte(tempString);
         }
 
@@ -117,58 +121,64 @@ public class Crypto {
         return decryptedBlock;
     }
 
-    public void keygen() {
-        // gen private key
-        this.privateKey = this.math.createSuperincreasing();
+    public void keygen() throws Exception {
+        // gen superincreasing sequence of private key
+        if(!this.math.isSuperIncreasing(this.privateKey = this.math.createSuperincreasing())) {
+            throw new MathViolationException("Error: Key generated is not superincreasing.");
+        }
         U.p("Is superincreasing: " + this.math.isSuperIncreasing(this.privateKey));
         U.p(privateKey);
 
-        // find modulo
-        long sum = math.calculateSumOf(this.privateKey);
-        this.modulo = this.math.findNextPrimeFrom(sum);
+        // find modulo and multiplier
+        final long sum = this.math.calculateSumOf(this.privateKey);
+        if (!this.math.isPrime(this.modulo = this.math.findNextPrimeFrom(sum))){
+            throw new MathViolationException("Error: modulo is not prime.");
+        }
         this.multiplier = this.math.getRandomCoPrime(this.modulo);
         U.p("mod: " + modulo + " mul: " + multiplier + "\n" + Integer.MAX_VALUE);
 
+        // generate public key
         for (int i = 0; i < keylength; ++i) {
-            long temp = privateKey[i] * multiplier;
-//            if (temp >= Integer.MAX_VALUE) { --> not necessary because we're using long
-//                U.p("Problem: " + temp);
-//            }
-            publicKey[i] = temp % modulo;
+            publicKey[i] = privateKey[i] * multiplier % modulo;
         }
 
         U.p(publicKey);
 
+        // write keys to files
+        writeKeysToFile();
+    }
+    
+    private void writeKeysToFile() throws Exception {
         // write private key to file
+        BufferedWriter writer = new BufferedWriter(null);
         try {
-            BufferedWriter pf = new BufferedWriter(new FileWriter("private.key"));
-            pf.write(Integer.toString(this.modulo) + ";");
-            pf.write(Integer.toString(this.multiplier) + ";");
+            writer = new BufferedWriter(new FileWriter("private.key"));
+            writer.write(Integer.toString(this.modulo) + ";");
+            writer.write(Integer.toString(this.multiplier) + ";");
             for (int i = 0; i < keylength; ++i) {
-                pf.write(Long.toString(privateKey[i]));
+                writer.write(Long.toString(privateKey[i]));
                 if (i != keylength - 1) {
-                    pf.write(",");
+                    writer.write(",");
                 }
             }
-            pf.close();
-        } catch (IOException e) {
-            System.exit(2);
+        } finally {
+            writer.close();
         }
 
         // write public key to file
         try {
-            BufferedWriter pf = new BufferedWriter(new FileWriter("public.key"));
+            writer = new BufferedWriter(new FileWriter("public.key"));
             for (int i = 0; i < keylength; ++i) {
-                pf.write(Long.toString(publicKey[i]));
+                writer.write(Long.toString(publicKey[i]));
                 if (i != keylength - 1) {
-                    pf.write(",");
+                    writer.write(",");
                 }
             }
-            pf.close();
-        } catch (IOException e) {
-            System.exit(2);
+        } finally {
+            writer.close();
         }
     }
+    
 
     /**
      * @clas MKMath private class for mathematical cryptographic functions for the program
@@ -176,16 +186,17 @@ public class Crypto {
     private class MKMath {
 
         public long[] createSuperincreasing() {
-            int length = 16;
+            final int length = 16;
             long[] seq = new long[length];
-            SecureRandom sr = new SecureRandom();
+            final int randomResolution = 3;
+            final SecureRandom sr = new SecureRandom();
 
             for (int i = 0; i < length; ++i) {
                 long temp = 1;
                 for (int j = 0; j < i; ++j) {
                     temp += seq[j];
                 }
-                seq[i] = temp + sr.nextInt(3);
+                seq[i] = temp + sr.nextInt(randomResolution);
             }
             return seq;
         }
@@ -204,14 +215,14 @@ public class Crypto {
         }
 
         public long calculateSumOf(long[] key) {
-            int val = 0;
+            int sum = 0;
             for (int i = 0; i < key.length; ++i) {
-                val += key[i];
+                sum += key[i];
             }
-            return val;
+            return sum;
         }
 
-        public int getModInverse(int multiplier, int modulo) {
+        public int getMultiplicativeModularInverse(int multiplier, int modulo) {
             BigInteger inverse = new BigInteger(String.valueOf(multiplier));
             inverse = inverse.modInverse(new BigInteger(String.valueOf(modulo)));
             return inverse.intValue();
@@ -241,24 +252,10 @@ public class Crypto {
         }
 
         public int getRandomCoPrime(int modulo) {
-            SecureRandom sr = new SecureRandom();
-            int random = sr.nextInt(modulo / 2);
-            int coprime = random + 1;
+            final SecureRandom sr = new SecureRandom();
+            final int random = sr.nextInt(modulo / 2);
+            final int coprime = random + 1;
             return coprime;
-        }
-
-        public BigInteger[] createBigIntegerSuperincreasing() {
-            int length = 128;
-            BigInteger[] seq = new BigInteger[length];
-
-            for (int i = 0; i < length; ++i) {
-                BigInteger temp = new BigInteger("1");
-                for (int j = 0; j < i; ++j) {
-                    temp = temp.add(seq[j]);
-                }
-                seq[i] = temp;
-            }
-            return seq;
         }
     } // end class MKMath
 }

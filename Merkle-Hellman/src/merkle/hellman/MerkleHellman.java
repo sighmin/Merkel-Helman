@@ -4,16 +4,15 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
+import merkle.hellman.exceptions.ParseException;
 
 /**
  * @author Simon van Dyk & Deon Taljaard
  * @date   2013-05-21
+ * @class  Program entry point
  */
 public class MerkleHellman {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // Parse commandline args & dispatch function
         // Join args in a white space delimited string
@@ -23,41 +22,43 @@ public class MerkleHellman {
         }
 
         // Dispatch function
-        if (arguments.contains("encrypt") || arguments.contains("--encrypt") || arguments.contains("-e")) {
-            if (!arguments.contains("public.key")) {
-                System.out.println("You must encrypt with a public key file called \"public.key\"");
-            } else {
+        try {
+            if (arguments.contains("encrypt") || arguments.contains("--encrypt") || arguments.contains("-e")) {
+                if (!arguments.contains("public.key")) {
+                    throw new ParseException("You must encrypt with a public key file called \"public.key\"");
+                }
                 encrypt(args);
-            }
-        } else if (arguments.contains("decrypt") || arguments.contains("--decrypt") || arguments.contains("-d")) {
-            if (!arguments.contains("private.key")) {
-                System.out.println("You must decrypt with a private key file called \"private.key\"");
-            } else {
+            } else if (arguments.contains("decrypt") || arguments.contains("--decrypt") || arguments.contains("-d")) {
+                if (!arguments.contains("private.key")) {
+                    throw new ParseException("You must decrypt with a private key file called \"private.key\"");
+                }
                 decrypt(args);
+            } else if (arguments.contains("keygen") || arguments.contains("--keygen") || arguments.contains("-k")){
+                keygen();
+            } else {
+                usage();
             }
-        } else if (arguments.contains("keygen") || arguments.contains("--keygen") || arguments.contains("-k")){
-            keygen();
-        } else if (arguments.contains("help") || arguments.contains("--help") || arguments.contains("-h")) {
-            usage();
-        } else {
-            usage();
+        } catch (ParseException e) {
+            System.out.println(e.getMessage());
+        } catch (Exception e){
+            U.p(e.getMessage());
         }
     }
 
-    public static void usage() {
+    private static void usage() {
         System.out.println(
                 "Merkel-Hellman Usage:\n"
                 + "help\n"
-                + "  java -jar Merkle-Hellman.jar help/--help/-h\n"
+                + "  java -jar Merkle-Hellman.jar [help|--help|-h]\n"
                 + "keygen\n"
-                + "  java -jar Merkle-Hellman.jar keygen/--keygen/-k\n"
+                + "  java -jar Merkle-Hellman.jar [keygen|--keygen|-k]\n"
                 + "encrypt\n"
-                + "  java -jar Merkle-Hellman.jar encrypt/--encrypt/-e public.key < plain > encrypted\n"
+                + "  java -jar Merkle-Hellman.jar [encrypt|--encrypt|-e] public.key < plain > encrypted\n"
                 + "decrypt\n"
-                + "  java -jar Merkle-Hellman.jar decrypt/--decrypt/-d private.key < encrypted > decrypted");
+                + "  java -jar Merkle-Hellman.jar [decrypt|--decrypt|-d] private.key < encrypted > decrypted");
     }
 
-    public static void encrypt(String[] args) {
+    private static void encrypt(String[] args) throws Exception {
         // Read key file
         String filename = "";
         String keyString = "";
@@ -92,11 +93,11 @@ public class MerkleHellman {
                 }
             } while (bytesRead > 0);
         } catch (IOException e) {
-            System.out.println("I/O Exception caught.");
+            U.p(e.getMessage());
         }
     }
 
-    public static void decrypt(String[] args) {
+    private static void decrypt(String[] args) throws Exception {
         // Read key file
         String filename = "";
         String keyString = "";
@@ -136,7 +137,7 @@ public class MerkleHellman {
         }
     }
     
-    public static void keygen(){
+    private static void keygen() throws Exception {
         Crypto crypto = new Crypto();
         crypto.keygen();
     }

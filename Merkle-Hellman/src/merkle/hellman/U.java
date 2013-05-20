@@ -9,34 +9,34 @@ import java.math.BigInteger;
  */
 public class U {
 
-    static boolean silent = true;
+    private static boolean debug = false;
 
-    static public void p(String s) {
-        if (!silent) {
+    public static void p(String s) {
+        if (debug) {
             System.out.println(s);
         }
     }
 
-    static public void p(int s) {
-        if (!silent) {
+    public static void p(int s) {
+        if (debug) {
             System.out.println(s);
         }
     }
 
-    static public void p(long s) {
-        if (!silent) {
+    public static void p(long s) {
+        if (debug) {
             System.out.println(s);
         }
     }
 
-    static public void p(char[] s) {
-        if (!silent) {
+    public static void p(char[] s) {
+        if (debug) {
             System.out.println(s);
         }
     }
 
-    static public void p(int[] s) {
-        if (!silent) {
+    public static void p(int[] s) {
+        if (debug) {
             for (int i : s) {
                 System.out.print(i + ",");
             }
@@ -44,8 +44,8 @@ public class U {
         }
     }
 
-    static public void p(long[] s) {
-        if (!silent) {
+    public static void p(long[] s) {
+        if (debug) {
             for (long i : s) {
                 System.out.print(i + ",");
             }
@@ -53,8 +53,8 @@ public class U {
         }
     }
 
-    static public void p(BigInteger[] s) {
-        if (!silent) {
+    public static void p(BigInteger[] s) {
+        if (debug) {
             for (BigInteger i : s) {
                 System.out.println(i.toString());
             }
@@ -62,15 +62,15 @@ public class U {
         }
     }
 
-    static public void p(byte[] data) {
-        if (!silent) {
+    public static void p(byte[] data) {
+        if (debug) {
             for (byte b : data) {
                 System.out.print(Integer.toBinaryString(b));
             }
         }
     }
 
-    static public char[] toCharArr(byte[] data) {
+    public static char[] toCharArr(byte[] data) {
         char[] chars;
         String temp = "";
         String binaryValue = "";
@@ -109,83 +109,4 @@ public class U {
         
         return b;
     }
-//    public static int getModInverse(int multiplier, int prime) {
-//        BigInteger inverse = new BigInteger(String.valueOf(multiplier));
-//        inverse = inverse.modInverse(new BigInteger(String.valueOf(prime)));
-//        return inverse.intValue();
-//    }    
-//    public static long[] createSuperincreasing() {
-//        int length = 16;
-//        long[] seq = new long[length];
-//        SecureRandom sr = new SecureRandom();
-//
-//        for (int i = 0; i < length; ++i) {
-//            long temp = 1;
-//            for (int j = 0; j < i; ++j) {
-//                temp += seq[j];
-//            }
-//            seq[i] = temp + sr.nextInt(3);
-//        }
-//        return seq;
-//    }
-//    public static boolean isSuperIncreasing(long[] seq) {
-//        int sum = 0;
-//        boolean test = true;
-//        for (int i = 0; i < seq.length; ++i) {
-//            if (seq[i] <= sum){
-//                test = false;
-//                break;
-//            }
-//            sum += seq[i];
-//        }
-//        return test;
-//    }
-//    public static int findNextPrimeFrom(long sum) {
-//        long prime = 0;
-//        for (long i = sum; i < sum*3; ++i){
-//            if (isPrime(i)){
-//                prime = i;
-//                break;
-//            }
-//        }
-//        return (int)prime;
-//    }
-//    public static boolean isPrime(long num){
-//        if (num == 2) {
-//          return true;
-//        }
-//        for (int i = 2; i <= (int)Math.sqrt(num) + 1; ++i){
-//          if (num % i == 0){
-//            return false;
-//          }
-//        }
-//        return true;
-//    }
-//    public static int getRandomCoPrime(int modulo) {
-//        SecureRandom sr = new SecureRandom();
-//        int random = sr.nextInt(modulo/2);
-//        int coprime = random + 1;
-//        return coprime;
-//    }
-//    public static long calculateSumOf(long[] key) {
-//        int val = 0;
-//        for (int i = 0; i < key.length; ++i) {
-//            val += key[i];
-//        }
-//        return val;
-//    }
-//    public static BigInteger[] createBigIntegerSuperincreasing() {
-//        int length = 128;
-//        BigInteger[] seq = new BigInteger[length];
-//        
-//        for (int i = 0; i < length; ++i){
-//            BigInteger temp = new BigInteger("1");
-//            for (int j = 0; j < i; ++j){
-//                //temp += seq[j];
-//                temp = temp.add(seq[j]);
-//            }
-//            seq[i] = temp;
-//        }
-//        return seq;
-//    }
 }

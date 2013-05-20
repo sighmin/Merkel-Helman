@@ -30,12 +30,12 @@ cat image.encrypted | java -jar Merkle-Hellman.jar -d private.key > image.decryp
 
 echo "Testing song..."
 echo "================================================================================"
-java -jar Merkle-Hellman.jar -k
-cat song.mp3 | java -jar Merkle-Hellman.jar -e public.key > song.encrypted
-cat song.encrypted | java -jar Merkle-Hellman.jar -d private.key > song.decrypted
+#java -jar Merkle-Hellman.jar -k
+#cat song.mp3 | java -jar Merkle-Hellman.jar -e public.key > song.encrypted
+#cat song.encrypted | java -jar Merkle-Hellman.jar -d private.key > song.decrypted
 
 echo "Opening image and playing song"
 echo "================================================================================"
-vlc song.decrypted &
-open image.decrypted &
+#vlc song.decrypted &
+#open image.decrypted &
 
