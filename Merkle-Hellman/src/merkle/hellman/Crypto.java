@@ -13,8 +13,9 @@ import merkle.hellman.exceptions.ViolatedPreconditionException;
 public class Crypto {
 
     private MKMath math = new MKMath();
+    private final int BYTE_SIZE = 8;
     private final int keylength = 16;
-    private final int blocksize = keylength / 8;
+    private final int blocksize = keylength / BYTE_SIZE;
     private long[] privateKey = new long[keylength];
     private long[] publicKey = new long[keylength];
     private int modulo;
