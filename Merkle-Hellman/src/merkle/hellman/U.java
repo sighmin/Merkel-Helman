@@ -1,31 +1,25 @@
 package merkle.hellman;
 
-import java.math.BigInteger;
-
 /**
  * @author Simon van Dyk & Deon Taljaard
  * @date 2013-05-21
- * @class Utility class for the program
+ * @class Utility class for the cryptographic program
  */
 public class U {
 
     private static boolean debug = false;
 
-    public static void p(String s) {
+    public static void p(Object o) {
         if (debug) {
-            System.out.println(s);
+            System.out.println(o);
         }
     }
-
-    public static void p(int s) {
+    
+    public static void p(Object[] objs) {
         if (debug) {
-            System.out.println(s);
-        }
-    }
-
-    public static void p(long s) {
-        if (debug) {
-            System.out.println(s);
+            for (Object o:objs)
+                System.out.print(o + ",");
+            System.out.println();
         }
     }
 
@@ -48,15 +42,6 @@ public class U {
         if (debug) {
             for (long i : s) {
                 System.out.print(i + ",");
-            }
-            System.out.println("");
-        }
-    }
-
-    public static void p(BigInteger[] s) {
-        if (debug) {
-            for (BigInteger i : s) {
-                System.out.println(i.toString());
             }
             System.out.println("");
         }

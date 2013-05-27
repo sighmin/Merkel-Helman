@@ -4,7 +4,7 @@ package merkle.hellman.exceptions;
 /**
  * @author Simon van Dyk & Deon Taljaard
  * @date   2013-05-21
- * @class  Program entry point
+ * @class  Thrown when the control flow precondition is unsatisfied.
  */
 public class ViolatedPreconditionException extends Exception {
 

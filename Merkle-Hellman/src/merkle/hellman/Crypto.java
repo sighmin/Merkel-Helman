@@ -2,8 +2,6 @@ package merkle.hellman;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-import java.math.BigInteger;
-import java.security.SecureRandom;
 import merkle.hellman.exceptions.MathViolationException;
 import merkle.hellman.exceptions.ViolatedPreconditionException;
 

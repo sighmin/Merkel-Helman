@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
-import merkle.hellman.MKMath;
 import merkle.hellman.exceptions.KeyDataViolationException;
 import merkle.hellman.exceptions.ParseException;
 
@@ -134,16 +133,16 @@ public class MerkleHellman {
             }
         }
 
+        // Parse cmd line input
         final String[] keydata = keyString.split(";");
         final String[] key = keydata[2].split(",");
-
         validatePrivateKeyInput(keydata);
 
         // Init crypto class with private key (modulo, multiplier, super increasing sequence)
         final Crypto crypto = new Crypto(keydata[0], keydata[1], key);
-        Scanner scan = null;
 
         // read in input from standard in containing the cipher text
+        Scanner scan = null;
         try {
             scan = new Scanner(System.in);
             String input;

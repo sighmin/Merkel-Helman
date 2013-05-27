@@ -4,7 +4,7 @@ package merkle.hellman.exceptions;
 /**
  * @author Simon van Dyk & Deon Taljaard
  * @date   2013-05-21
- * @class  Cryptographic implementation
+ * @class  Violation of data format during parsing.
  */
 public class ParseException extends Exception {
 
