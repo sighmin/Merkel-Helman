@@ -29,7 +29,7 @@ public class Crypto {
     // encrypt
     public Crypto(String[] key) {
         for (int i = 0; i < keylength; ++i) {
-            this.publicKey[i] = Long.parseLong(key[i]);//Integer.parseInt(key[i]);
+            this.publicKey[i] = Long.parseLong(key[i]);
         }
         U.p(this.publicKey);
     }
